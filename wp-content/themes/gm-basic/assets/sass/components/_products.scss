@@ -1,0 +1,320 @@
+.product-listing-section {
+    .product-listing-block {
+
+        @include media-down(tablet) {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-bottom: 2rem;
+        }
+
+        .solution-block-left {
+            padding-right: 5rem;
+
+            @include media-down(desktop) {
+                padding-right: 3rem;
+            }
+
+            @include media-down(tablet) {
+                width: 100%;
+                padding-right: 0;
+                margin-top: 2rem;
+            }
+
+            .o-header--h3 {
+                color: $interface-black;
+                @extend %o-header--h3;
+                font-weight: weight(bold);
+                font-family: family(secondary);
+            }
+
+            .o-body-small {
+                @extend %o-body-small;
+                color: $interface-light-black;
+                padding-top: 4rem;
+
+                @include media-down(desktop-large) {
+                    padding-top: 1rem !important;
+		            padding-bottom: 2rem !important;
+                }
+
+                // @include media-down(desktop) {
+                //     padding-top: 4rem;
+                // }
+
+                @include media-down(tablet-large) {
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    // padding-top: 2rem;
+                }
+            }
+
+            .common-listing {
+                padding-top: 0.5rem;
+
+                ul {
+                    li {
+                        @include media-down(desktop-large) {
+                            font-size: 1.8rem;
+		                    padding: 1rem 0 1rem 2.5rem;
+                            
+                            &::before {
+                                top: 2rem;
+                            }
+                        }
+
+                        @include media-down(desktop) {
+                            font-size: 1.6rem;
+                            padding: 1rem 0 1rem 2rem;
+
+                            &::before {
+                                top: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .o-body-medium {
+                @extend %o-body-medium;
+                color: $interface-black;
+                font-weight: weight(bold);
+                font-family: family(secondary);
+                padding-top: 4rem;
+
+                @include media-down(desktop-large) {
+                    padding-top: 1rem !important;
+                }
+
+                // @include media-down(desktop) {
+                //     padding-top: 3rem;
+                // }
+
+                // @include media-down(tablet-large) {
+                //     padding-top: 1rem;
+                // }
+            }
+
+            .small-title {
+                padding-top: 2.5rem;
+                text-transform: initial;
+                padding-bottom: 2rem;
+            }
+
+            p {
+                @include media-down(desktop-large) {
+                    font-size: 1.8rem;
+		            line-height: normal;
+                }
+
+                @include media-down(desktop) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .solution-block-right {
+            padding-left: 5rem;
+
+            @include media-down(desktop) {
+                padding-left: 3rem;
+            }
+
+            @include media-down(tablet) {
+                width: 100%;
+                padding-left: 0;
+            }
+
+            img {
+                height: 93.7rem;
+                object-fit: cover;
+                // object-position: center;
+                object-position: left center !important;
+                box-shadow: 15px 15px 70px 0px #00000026;
+
+                @include media-down(desktop-large) {
+                    height: 79.7rem;
+                }
+
+                @include media-down(desktop) {
+                    height: 76.7rem;
+                }
+
+                @include media-down(tablet-large) {
+                    height: 68.7rem;
+                }
+
+                @include media-down(tablet) {
+                    height: 45rem;
+                    width: 100%;
+                }
+
+                @include media-down(mobile) {
+                    height: 40rem;
+                }
+            }
+
+            &.ron-block-img {
+                img {
+                    height: 118rem;
+
+                    @include media-down(desktop-large) {
+                        height: 95rem;
+                    }
+
+                    @include media-down(desktop) {
+                        height: 92rem;
+                    }
+
+                    @include media-down(tablet-large) {
+                        height: 100rem;
+                    }
+
+                    @include media-down(tablet) {
+                        height: 45rem;
+                    }
+
+                    @include media-down(mobile) {
+                        height: 40rem;;
+                    }
+                }
+            } 
+        }
+
+        &:nth-child(odd) {
+            display: flex;
+            flex-direction: row-reverse;
+
+            @include media-down(tablet) {
+                flex-direction: column-reverse;
+            }
+
+            .solution-block-left {
+                padding-right: 5rem;
+                padding-right: 0;
+
+                @include media-down(desktop) {
+                    padding-right: 3rem;
+                    padding-left: 0;
+                }
+
+                @include media-down(tablet) {
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+            }
+
+            .solution-block-right {
+                padding-left: 0;
+                padding-right: 5rem;
+
+                @include media-down(desktop) {
+                    padding-left: 0;
+                    padding-right: 3rem;
+                }
+
+                @include media-down(tablet) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.career-opportunity-section {
+    &.product-opportunity-section {
+        .career-para-btm p {
+            max-width: 82.4rem;
+
+            @include media-down(desktop) {
+                max-width: 67.4rem;
+            }
+
+            @include media-down(tablet-large) {
+                max-width: 40.4rem;
+            }
+        }
+    }
+}
+
+.product-ron-listing {
+    padding: 4rem 0 1rem 0;
+
+    @include media-down(desktop-large) {
+        padding: 1rem 0 0 0;
+    }
+
+    .product-ron-row {
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include media-down(desktop-large) {
+            margin-bottom: 2rem;
+        }
+
+        @include media-down(tablet) {
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            position: relative;
+            padding-left: 2.5rem;
+            color: #000000;
+            font-weight: 700;
+            font-family: ObjectSansBold;
+            font-size: 2.8rem;
+            line-height: 4rem;
+
+            @include media-down(desktop-large) {
+                font-size: 2.2rem;
+            }
+
+            @include media-down(tablet) {
+                font-size: 2rem;
+            }
+
+            &::before {
+                content: "";
+                width: 1rem;
+                height: 1rem;
+                background: linear-gradient(135.73deg, #E98824 17.2%, #E62E2E 78.52%);
+                position: absolute;
+                left: 0;
+                top: 1.5rem;
+                border-radius: 100%;
+                display: block;
+            }
+        }
+
+        h5 {
+            font-family: DM Sans;
+            color: #000000;
+            font-size: 2.6rem;
+            font-weight: 500;
+            padding-top: 2rem;
+
+            @include media-down(desktop-large) {
+                font-size: 2rem;
+		        padding-top: 1rem;
+            }
+
+            @include media-down(tablet) {
+                font-size: 1.8rem;
+                padding-top: 0.5rem;
+            }
+        }
+
+        p {
+            color: #333333;
+            font-size: 2.2rem;
+            font-family: DM Sans;
+            padding-top: 1.5rem;
+            @include media-down(desktop-large) {
+                padding-top: 1rem;
+            }
+        }
+    }
+}

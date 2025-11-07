@@ -1,0 +1,112 @@
+.join-team-section {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    
+    .join-team-inner {
+        background: linear-gradient(92.28deg, #92263D 0%, #92263D 0%, #E72E2D 34.92%, #F28826 68.88%, #FFCB05 100%);;
+        border-radius: 4rem;
+        padding: 5rem 5rem;
+        box-shadow: 16px 16px 90px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+
+        .o-header--h2 {
+            font-family: 'ObjectSansBold';
+            max-width: 97.7rem;
+            color: $interface-white;
+            font-weight: weight(extrabold);
+            line-height: 7.6rem;
+            text-transform: uppercase;
+
+            strong {
+                font-family: 'ObjectSansRegular';
+                font-weight: weight(regular);
+            }
+
+            @include media-down(desktop-large) {
+                line-height: 5.6rem;
+            }
+
+            @include media-down(tablet-large) {
+                line-height: 4.6rem;
+                font-size: 32px;
+            }
+
+            @include media-down(tablet-large) {
+                line-height: 3.6rem;
+                font-size: 26px;
+            }
+
+            @include media-down(mobile) {
+                line-height: 3rem;
+                font-size: 2rem;
+                max-width: 100%;
+                padding-bottom: 3.5rem;
+
+                p {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }   
+
+        .team-btn {
+            > .vc_column-inner{
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+            }
+            
+        }
+        
+        @include media-down(desktop-large) {
+            border-radius: 6rem;
+            padding: 5rem 8.5rem;
+        }
+
+        @include media-down(desktop) {
+            padding: 4rem 7.5rem;
+            border-radius: 4rem;
+        }
+
+        @include media-down(laptop-large) {
+            padding: 5rem 5rem;
+            border-radius: 4rem;
+        }
+
+        @include media-down(tablet-large) {
+            border-radius: 3rem;
+            padding: 3rem 3.5rem;
+        }
+
+        @include media-down(tablet) {
+            border-radius: 3rem;
+            padding: 3rem 4.5rem;
+        }
+
+        @include media-down(mobile) {
+            border-radius: 2rem;
+            padding: 2rem 2.5rem;
+        }
+    } 
+
+    @include media-down(desktop-large) {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    @include media-down(desktop) {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    @include media-down(tablet-large) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}

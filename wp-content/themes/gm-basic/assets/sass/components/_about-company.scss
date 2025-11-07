@@ -1,0 +1,408 @@
+.about-company {
+  padding-top: 24rem;
+
+  h2 {
+    color: $interface-black;
+    text-align: center;
+  }
+
+  .spark-description {
+    display: flex;
+    justify-content: center;
+
+    p {
+      max-width: 76.4rem;
+      @extend %o-body-medium;
+      padding-top: 2rem;
+      text-align: center;
+      font-family: family(primary);
+    }
+  }
+
+  .video-block {
+    margin-top: 3.125vw;
+
+    iframe {
+      width: 128rem !important;
+      height: 72rem !important;
+      border-radius: 4rem;
+    }
+  }
+
+  @include media-down(desktop-large) {
+    padding-top: 15rem;
+  }
+}
+.company-video {
+  width: 128rem;
+  height: 78rem;
+  margin: auto;
+  display: flex;
+  border-radius: 4rem;
+  margin-top: 3.125vw;
+}
+
+.who-rysun-section {
+  z-index: 1;
+  position: relative;
+  // overflow: hidden; 
+
+  .who-rysun-section-inner-top {
+    background-color: $interface-white;
+    border-radius: 3.646vw 3.646vw 0 0; 
+
+    // @include media-down(laptop-large) {
+    //   padding: 10rem 5rem 0 5rem;
+    // }
+    
+    &.value-rysun-section-inner-top {
+      border-radius: 0;
+    }
+    .small-title {
+      color: $interface-black;
+    }
+  }
+
+  .who-rysun-section-inner-btm {
+    background-color: $interface-white;
+
+    .o-button3 {
+      margin-top: 3.125vw;
+    }
+
+    .about-para-right {
+      padding-top: 3rem;
+
+      p {
+        @extend %o-body-medium;
+        color: $interface-light-black;
+        max-width: 136rem;
+
+        @include media-down(desktop-large) {
+          max-width: 125rem;
+        }
+      }
+
+      @include media-down(desktop-large) {
+        padding-left: 0;
+      }
+
+      @include media-down(desktop) {
+        padding-top: 2rem;
+      }
+    }
+    .common-paragraph {
+      &.o-header--h2 {
+        max-width: 157rem;
+      }
+    }
+  }
+    
+  // &:after {
+  //   content: '';
+  //   background: linear-gradient(
+  //     315.86deg,
+  //     #23a7e0 26.35%,
+  //     #2d2f8f 39.84%,
+  //     #702e8e 51.51%,
+  //     #e62e2e 64.74%,
+  //     #e98824 76.38%,
+  //     #ffcc06 85.54%
+  //   );
+  //   opacity: 0.6;
+  //   filter: blur(155px);
+  //   transform: rotate(-60.47deg);
+  //   position: absolute;
+  //   width: 39rem;  
+  //   height: 39rem;
+  //   bottom: -16.5rem;
+  //   right: -20rem;
+  // } 
+
+  // &:after {
+  //   content: '';
+  //   background: linear-gradient(315.86deg, #23a7e0 26.35%, #2d2f8f 39.84%,#702e8e 51.51%, #e62e2e 64.74%, #e98824 76.38%, #ffcc06 85.54%);
+  //   opacity: 0.6;
+  //   filter: blur(8.073vw);
+  //   transform: rotate(-60.47deg);
+  //   position: absolute;
+  //   width: 20.313vw;
+  //   height: 20.313vw;
+  //   // bottom: -8.594rem; 
+  //   // bottom: 20.594vw;
+  //   right: -20rem;
+  //   top: 16.667vw;
+  // }
+}
+
+.about-logo-section {
+  padding-top: 7rem;
+  background-color: $interface-white;
+
+  @include media-down(laptop) {
+    padding-top: 4rem;
+  }
+
+  @include media-down(tablet-large) {
+    padding-top: 2rem;
+  }
+
+  .logo-listing {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.563vw;
+    width: 100%;
+
+    .logo-block {
+      width: 25%;
+      padding: 1.563vw 1.563vw 1.563vw;
+      @include media-down(mobile) {
+        width: 33.33%;
+      }
+
+      .logo-block-inner {
+        border: 0.1rem solid $interface-light-grey;
+        width: 100%;
+        height: 8.333vw;
+        padding: 2.604vw;
+        display: flex;        
+        justify-content: center; 
+        align-items: center;
+        border-radius: 1.25vw;
+        @include media-down(mobile) {
+          height: 6rem;
+        }
+
+        img {
+          object-fit: cover;
+          object-position: center;
+          max-height: 5.729vw;
+          @include media-down(mobile) {
+            max-height: 4.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.core-value {
+  padding-top: 10rem;
+  padding-left: 5.2rem ;
+  padding-right: 5.2rem ;
+
+  @include media-down(desktop-large) {
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @include media-down(laptop-large) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include media-down(tablet-large) {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  @include media-down(mobile) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .blue {
+    h6 {
+      background-color: $interface-darkblue;
+    }
+
+    ul {
+      li {
+          background-color: rgba(45, 47, 143, 0.95);
+      }
+    }
+  }
+
+  .purple {
+    h6 {
+      background-color: #702E8E;
+    }
+
+    ul {
+      li {
+          background-color: rgba(112, 46, 142, 0.95);
+      }
+    }
+  }
+
+  .coffee {
+    h6 {
+      background-color: #5C103E;
+    }
+
+    ul {
+      li {
+          background-color: rgba(92, 16, 62, 0.95);
+      }
+    }
+  }
+
+  .maroon {
+    h6 {
+      background-color: #92263D;
+    }
+
+    ul {
+      li {
+          background-color: rgba(146, 38, 61, 0.95);
+      }
+    }
+  }
+
+  .red {
+    h6 {
+      background-color: #E62E2E;
+    }
+
+    ul {
+      li {
+          background-color: rgba(230, 46, 46, 0.95);
+      }
+    }
+  }
+
+  .orange {
+    h6 {
+      background-color: #E98824;
+    }
+
+    ul {
+      li {
+          background-color: rgba(233, 135, 36, 0.95);
+      }
+    }
+  }
+
+  .vc_col-sm-2 {
+    padding: 0px 1.8rem;
+
+    @include media-down(desktop-large) {
+      padding: 0px 1rem;
+    }
+
+    @include media-down(tablet-large) {
+      width: 25%;
+      margin-top: 2rem;
+    }
+
+    @include media-down(tablet) {
+      width: 33.33%;
+    }
+
+    @include media-down(mobile) {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+  }
+
+  h6 {
+      @extend %o-paragraph-large;
+      color: $interface-white;
+      font-weight: weight(bold);
+      border-radius: 1.5rem 1.5rem 0 0;
+      padding: 2.7rem 2rem 1.9rem 2rem;
+      text-transform: uppercase;
+      
+      @include media-down(desktop-large) {
+        padding: 2.5rem 1.5rem 2rem;
+      }
+
+      @include media-down(laptop) {
+        padding: 2rem 1rem 1.8rem;
+      }
+
+      @include media-down(mobile) {
+        padding: 2rem 1.5rem 1.5rem;
+      }
+  }
+  ul {
+    li {
+      @extend %o-paragraph-medium;
+      // font-size: 1.25vw;
+      font-weight: weight(regular);
+      padding: 1.5rem 2rem;
+      color: $interface-white;
+      line-height: 3rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      
+      &:last-child {
+        border-bottom: 0;
+        border-radius: 0 0 1.5rem 1.5rem;
+      }
+
+      @include media-down(desktop-large) {
+        padding: 1.5rem 1.5rem;
+      }
+
+      @include media-down(desktop) {
+        font-size: size(paragraph, small);
+        line-height: lineheight(paragraph, small);
+      }
+
+      @include media-down(laptop) {
+        padding: 1.5rem 1rem;
+      }
+
+      @include media-down(mobile) {
+        padding: 1.5rem 1.5rem;
+      }
+    }
+  }
+}
+
+.infinite-possibilities {
+}
+
+.infinite-impact {
+  ul {
+    padding-top: 0.781vw;
+
+    li {
+      @extend %o-paragraph-medium;
+      font-size: 1.25vw;
+      font-weight: 700;
+      margin-bottom: 1.563vw;
+      color: $interface-light-black;
+      position: relative;
+      padding: 0.3rem 0 0.3rem 1.823vw;
+
+      &:before {
+        content: '';
+        background-image: url(../images/right-arrow.webp);
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 3rem;
+        height: 1.8rem;
+        background-repeat: no-repeat;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+// body {
+//   &.home {
+//     .who-rysun-section {
+//       padding-top: 25rem;
+//       margin-top: 0 !important;
+//     }
+
+//     .box-outer-section {
+//       &::before {
+//         top: 11.5rem;
+//       }
+//     }
+//   }
+// }

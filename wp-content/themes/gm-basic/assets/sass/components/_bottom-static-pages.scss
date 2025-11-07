@@ -1,0 +1,71 @@
+.insustry-main-section {
+    &.services-main-section {
+        &.disclaimer-section {
+            .container {
+                .disclaimer-content {
+                    margin-bottom: 5rem;
+
+                    @include media-down(tablet-large) {
+                        margin-bottom: 4rem;
+                    }
+
+                    @include media-down(tablet) {
+                        margin-bottom: 3rem;
+                    }
+
+                    @include media-down(mobile) {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                &:last-child {
+                    .disclaimer-content {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .common-para {
+                p {
+                    font-size: 2.2rem;
+                    line-height: 3rem;
+                    font-weight: normal;
+                    padding-top: 2.2rem;
+                    max-width: 100%;
+
+                    @include media-down(desktop-large) {
+                        font-size: 2rem;
+                        line-height: 2.6rem;
+                        font-weight: normal;
+                        padding-top: 2rem;
+                    }
+
+                    @include media-down(desktop) {
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                        padding-top: 1.8rem;
+                    }
+
+                    @include media-down(laptop) {
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        padding-top: 1.5rem;
+                    }
+
+                    @include media-down(tablet-large) {
+                        font-size: 1.6rem;
+                        padding-top: 1.2rem;
+                    }
+
+                    // @include media-down(tablet) {
+                    //     padding-top: 1.2rem;
+                    // }
+
+                    @include media-down(mobile) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

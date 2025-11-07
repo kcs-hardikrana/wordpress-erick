@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url($font-directory + '/icomoon.eot?9rw5fj');
+  src:  url($font-directory + '/icomoon.eot?9rw5fj#iefix') format('embedded-opentype'),
+    url($font-directory + '/icomoon.ttf?9rw5fj') format('truetype'),
+    url($font-directory + '/icomoon.woff?9rw5fj') format('woff'),
+    url($font-directory + '/icomoon.svg?9rw5fj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="spark-"], [class*=" spark-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.spark-pinterest-icon:before {
+  content: "\e91d";
+}
+.spark-instagram:before {
+  content: "\e91c";
+}
+.spark-insta-icon:before {
+  content: "\e91a";
+}
+.spark-twitter-icon:before {
+  content: "\e91b";
+}
+.spark-digital-icon:before {
+  content: "\e916";
+}
+.spark-data-icon:before {
+  content: "\e917";
+}
+.spark-data:before {
+  content: "\e918";
+}
+.spark-ai-icon:before {
+  content: "\e919";
+}
+.spark-facebook1:before {
+  content: "\e912";
+}
+.spark-linkedin1:before {
+  content: "\e913";
+}
+.spark-twitter1:before {
+  content: "\e914";
+}
+.spark-youtube1:before {
+  content: "\e915";
+}
+.spark-Vector:before {
+  content: "\e910";
+}
+.spark-button-arrow:before {
+  content: "\e911";
+}
+.spark-back-top:before {
+  content: "\e90f";
+}
+.spark-btn-arrow:before {
+  content: "\e90e";
+}
+.spark-energy:before {
+  content: "\e90b";
+}
+.spark-hi-tech:before {
+  content: "\e90c";
+}
+.spark-retail-ecommerce:before {
+  content: "\e90d";
+}
+.spark-right-arrow2:before {
+  content: "\e90a";
+}
+.spark-right-arrow:before {
+  content: "\e909";
+}
+.spark-facebook:before {
+  content: "\e905";
+}
+.spark-linkedin:before {
+  content: "\e906";
+}
+.spark-twitter:before {
+  content: "\e907";
+}
+.spark-youtube:before {
+  content: "\e908";
+}
+.spark-left-slide-arrow:before {
+  content: "\e903";
+}
+.spark-right-slide-arrow:before {
+  content: "\e904";
+}
+.spark-location:before {
+  content: "\e902";
+}
+.spark-search-icon:before {
+  content: "\e901";
+}
+.spark-submit:before {
+  content: "\e900";
+}
+
+// @font-face {
+//   font-family: 'icomoon';
+//   src:  url($font-directory + '/icomoon.eot?p03kqk');
+//   src:  url($font-directory + '/icomoon.eot?p03kqk#iefix') format('embedded-opentype'),
+//     url($font-directory + '/icomoon.ttf?p03kqk') format('truetype'),
+//     url($font-directory + '/icomoon.woff?p03kqk') format('woff'),
+//     url($font-directory + '/icomoon.svg?p03kqk#icomoon') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: block;
+// }
+
+// [class^="spark-"], [class*=" spark-"] {
+//   /* use !important to prevent issues with browser extensions that change fonts */
+//   font-family: 'icomoon' !important;
+//   speak: never;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
+
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// .spark-instagram:before {
+//   content: "\e91c";
+// }
+// .spark-insta-icon:before {
+//   content: "\e91a";
+// }
+// .spark-twitter-icon:before {
+//   content: "\e91b";
+// }
+// .spark-digital-icon:before {
+//   content: "\e916";
+// }
+// .spark-data-icon:before {
+//   content: "\e917";
+// }
+// .spark-data:before {
+//   content: "\e918";
+// }
+// .spark-ai-icon:before {
+//   content: "\e919";
+// }
+// .spark-facebook1:before {
+//   content: "\e912";
+// }
+// .spark-linkedin1:before {
+//   content: "\e913";
+// }
+// .spark-twitter1:before {
+//   content: "\e914";
+// }
+// .spark-youtube1:before {
+//   content: "\e915";
+// }
+// .spark-Vector:before {
+//   content: "\e910";
+// }
+// .spark-button-arrow:before {
+//   content: "\e911";
+// }
+// .spark-back-top:before {
+//   content: "\e90f";
+  
+// }
+// .spark-btn-arrow:before {
+//   content: "\e90e";
+// }
+// .spark-energy:before {
+//   content: "\e90b";
+// }
+// .spark-hi-tech:before {
+//   content: "\e90c";
+// }
+// .spark-retail-ecommerce:before {
+//   content: "\e90d";
+// }
+// .spark-right-arrow2:before {
+//   content: "\e90a";
+// }
+// .spark-right-arrow:before {
+//   content: "\e909";
+// }
+// .spark-facebook:before {
+//   content: "\e905";
+// }
+// .spark-linkedin:before {
+//   content: "\e906";
+// }
+// .spark-twitter:before {
+//   content: "\e907";
+// }
+// .spark-youtube:before {
+//   content: "\e908";
+// }
+// .spark-left-slide-arrow:before {
+//   content: "\e903";
+  
+// }
+// .spark-right-slide-arrow:before {
+//   content: "\e904";
+// }
+// .spark-location:before {
+//   content: "\e902";
+  
+// }
+// .spark-search-icon:before {
+//   content: "\e901";
+// }
+// .spark-submit:before {
+//   content: "\e900";
+// }
+
+
+
+
+
+

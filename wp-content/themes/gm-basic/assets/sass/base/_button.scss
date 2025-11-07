@@ -1,0 +1,483 @@
+%button,
+.o-button, .c-button > .vc_general.vc_btn3, input[type="submit"], .yikes-easy-mc-submit-button span, .c-button > a.vc_general.vc_btn3:active, .c-button > a.vc_general.vc_btn3:focus, .o-button .vc_btn3.vc_btn3-color-grey { 
+    transition: all 0.5s ease;
+    display: inline-block;
+    position: relative;
+
+    .bottom {
+        position: absolute;
+        left: 7px;
+        top: 7px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(236, 137, 34, 0.15);
+        display: block;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        border-radius: 4rem;
+    }
+
+    .top {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #EC8922;
+        padding: 0.9rem 3.5rem 0.9rem 3.5rem;
+        border-radius: 4rem;
+        background: transparent;
+
+        .label {
+            @extend %o-text;
+            font-size: size(paragraph, large);
+            line-height: lineheight(paragraph, small);
+            font-weight: weight(bold);
+            color: $interface-white;
+        }
+
+        .button-border {
+            position: absolute;
+            background-color: rgba(236, 137, 34, 0.15);
+            -webkit-transition: all .25s ease-out;
+            -moz-transition: all .25s ease-out;
+            -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+
+            &.button-border-left {
+                left: -2px;
+                bottom: -2px;
+                width: 2px;
+                height: 0;
+            }
+
+            &.button-border-top {
+                left: -2px;
+                top: -2px;
+                width: 0;
+                height: 2px;
+            }
+
+            &.button-border-right {
+                right: -2px;
+                top: -2px;
+                width: 2px;
+                height: 0;
+            }
+
+            &.button-border-bottom {
+                right: -2px;
+                bottom: -2px;
+                width: 0;
+                height: 2px;
+            }
+        }
+    }
+
+    &:hover {
+        .bottom {
+            left: 0;
+            top: 0;
+            background-color: $interface-orange;
+        }
+
+        .top{
+            .label {
+                color: $interface-white;
+            }
+
+            // .button-border-left, .button-border-right {
+            //     height: calc(100% + 2px);
+            //     border-radius: 4rem;
+            // }
+        }
+    }
+}
+.link {
+    margin-left: auto;
+    text-align: right;
+    
+    a {
+        color: $interface-red;
+        position: relative;
+        @extend %o-paragraph-large;
+        font-weight: weight(bold);
+        padding-right: 60px;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            background-color: $interface-red;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 5rem;
+            height: 0.2rem;
+        }
+
+        &:visited {
+            color: $interface-red;
+        }
+    }
+    
+}
+
+.view-btn {
+    background-color: transparentize($interface-black, 0.3);
+    @extend %o-paragraph-large;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: zindex(float);
+    position: relative;
+    text-transform: uppercase;
+    font-weight: weight(extrabold);
+    transition: opacity 0.3s, transform 0.45s;
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,40px,0);
+    color: $interface-white;
+    opacity: 0;
+
+    @include media-down(desktop-large) {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+input[type="submit"], .wpcf7-submit {
+    @extend %o-paragraph-extra-small;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    box-shadow: none;
+    background-image: none;
+    font-family: family(secondary);
+    background: linear-gradient(90deg, #2D2F8F 0%, #702E8E 100%);
+    position: relative;
+    color: $interface-white;
+    font-weight: weight(bold);
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+    display: inline-flex;
+    transition: background 0.5s ease-out;  
+    border-radius: 0;
+
+    i {
+        color: $interface-white;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+
+        @include media-down(tablet-large) {
+            font-size: 1.4rem;
+        }
+
+        @include media-down(mobile) {
+            font-size: 1.2rem;
+            margin-left: 1rem;
+        }
+    }
+
+    @include media-down(desktop-large) {
+        font-size: size(body, small);
+        line-height: lineheight(body, small);
+    }
+
+    @include media-down(tablet-large) {
+        font-size: size(paragraph, medium);
+        line-height: lineheight(paragraph, medium);
+    }
+
+    @include media-down(tablet) {
+        padding: 1rem 2.5rem;
+    }
+
+    @include media-down(mobile) {
+        font-size: 1.2rem !important;
+        line-height: 2rem !important;
+        padding: 0.8rem 1.6rem;
+    }
+
+    &:hover {
+        background: linear-gradient(90deg, #E98824 0%, #2D2F8F 100%);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);         
+        color: $interface-white;
+        transition: background 0.5s ease-out;  
+
+        i {
+            color: $interface-white;
+        }
+    }
+
+}
+
+
+input[type="submit"] {
+    border: 0;
+}
+
+
+%o-button3,
+.o-button3 {
+    color: $interface-white;
+    display: inline-block;
+
+    a {
+        @extend %o-paragraph-extra-small;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        box-shadow: none;
+        background-image: none;
+        font-family: family(secondary);
+        background: linear-gradient(90deg, #2D2F8F 0%, #702E8E 100%);
+        position: relative;
+        color: $interface-white;
+        font-weight: weight(bold);
+        display: flex;
+        align-items: center;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+        display: inline-flex;
+        transition: background 0.5s ease-out;  
+        line-height: 2rem !important;
+
+        i {
+            color: $interface-white;
+            font-size: 1.5rem;
+            margin-left: 1.5rem;
+
+            @include media-down(tablet-large) {
+                font-size: 1.4rem;
+            }
+
+            @include media-down(mobile) {
+                font-size: 1.2rem;
+                margin-left: 1rem;
+            }
+        }
+
+        @include media-down(desktop-large) {
+            font-size: size(body, small);
+            line-height: lineheight(body, small);
+        }
+
+        @include media-down(tablet-large) {
+            font-size: size(paragraph, medium);
+            line-height: lineheight(paragraph, medium);
+        }
+
+
+        @include media-down(tablet) {
+            font-size: 1.2rem !important;
+            line-height: 2rem !important;
+            padding: 0.8rem 1.6rem;
+        }
+
+        &:hover {
+            background: linear-gradient(90deg, #E98824 0%, #2D2F8F 100%);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);         
+            color: $interface-white;
+            transition: background 0.5s ease-out;  
+
+            i {
+                color: $interface-white;
+            }
+        }
+
+    }
+
+    &.secondary {
+        color: $interface-white;
+        
+        a {
+            background: transparent;
+            border: 0.1rem solid $interface-white;
+            color: $interface-white;
+            transition: background 0.5s ease-out;  
+
+            i {
+                color: $interface-white;
+            }
+
+            &:hover {
+                background-color: $interface-black;
+                border-color: $interface-black;
+            }
+        }
+        
+    }
+
+    &.tertiary {
+        color: $interface-white;
+
+        a {
+            background: linear-gradient(135deg, #E72E2D 0%, #F28826 100%);
+            color: $interface-white;
+
+            i {
+                color: $interface-white;
+            }
+
+            &:hover {
+                background: linear-gradient(135deg, #FFCB05 0%, #F28826 100%);
+                transition: background 0.5s ease-out;  
+            }
+        }
+    }
+
+    &:hover {
+        i {
+            -webkit-animation: arrow_right_cross 1s ease-in-out infinite;
+            -moz-animation: arrow_right_cross 1s ease-in-out infinite;
+            animation: arrow_right_cross 1s ease-in-out infinite;
+        }
+    }
+    
+}
+
+@-webkit-keyframes arrow_right_cross {
+    0% { -webkit-transform:translate(0,0); opacity: 0;}
+    50% { opacity: 1;}
+    100% { -webkit-transform:translate(10px,0); opacity: 0; }
+}
+@-moz-keyframes arrow_right_cross {
+    0% { -webkit-transform:translate(0,0); opacity: 0;}
+    50% { opacity: 1;}
+    100% { -webkit-transform:translate(10px,0); opacity: 0;}
+}
+@keyframes arrow_right_cross {
+    0% { -webkit-transform:translate(0,0); opacity: 0;}
+    50% { opacity: 1;}
+    100% { -webkit-transform:translate(10px,0); opacity: 0;}
+}
+
+#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton {
+    @extend %o-paragraph-extra-small;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    box-shadow: none;
+    background-image: none;
+    font-family: family(secondary);
+    background: linear-gradient(90deg, #2D2F8F 0%, #702E8E 100%);
+    position: relative;
+    color: $interface-white;
+    font-weight: weight(bold);
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+    display: inline-flex;
+    transition: background 0.5s ease-out;  
+    line-height: 2rem !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    text-align: center;
+    justify-content: center;
+
+    @include media-down(desktop-large) {
+        font-size: size(body, small);
+        line-height: lineheight(body, small);
+    }
+
+    @include media-down(tablet-large) {
+        font-size: size(paragraph, medium);
+        line-height: lineheight(paragraph, medium);
+    }
+
+
+    @include media-down(mobile) {
+        font-size: 1.2rem !important;
+        line-height: 2rem !important;
+        padding: 0.8rem 1.6rem;
+    }
+
+    &:hover {
+        background: linear-gradient(90deg, #E98824 0%, #2D2F8F 100%);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);         
+        color: $interface-white !important;
+        transition: background 0.5s ease-out;  
+
+        i {
+            color: $interface-white;
+        }
+    }
+
+    &.moove-gdpr-infobar-reject-btn {
+        background: transparent;
+        border: 0.1rem solid $interface-white !important;
+        color: $interface-white;
+
+        &:hover {
+            background-color: $interface-black;
+            border-color: $interface-black;
+            color: $interface-black !important;
+        }
+    }
+}
+
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton, .gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green {
+    @extend %o-paragraph-extra-small;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    box-shadow: none;
+    background-image: none;
+    font-family: family(secondary);
+    background: linear-gradient(90deg, #2D2F8F 0%, #702E8E 100%);
+    position: relative;
+    color: $interface-white;
+    font-weight: weight(bold);
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+    display: inline-flex;
+    transition: background 0.5s ease-out;  
+    line-height: 2rem !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    text-align: center;
+    justify-content: center;
+
+    @include media-down(desktop-large) {
+        font-size: size(body, small);
+        line-height: lineheight(body, small);
+    }
+
+    @include media-down(tablet-large) {
+        font-size: size(paragraph, medium);
+        line-height: lineheight(paragraph, medium);
+    }
+
+
+    @include media-down(mobile) {
+        font-size: 1.2rem !important;
+        line-height: 2rem !important;
+        padding: 0.8rem 1.6rem;
+    }
+
+    &:hover {
+        background: linear-gradient(90deg, #E98824 0%, #2D2F8F 100%);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);         
+        color: $interface-white !important;
+        transition: background 0.5s ease-out;  
+
+        i {
+            color: $interface-white;
+        }
+    }
+
+    &.moove-gdpr-modal-reject-all, &.moove-gdpr-modal-allow-all {
+        background: transparent;
+        border: 0.1rem solid $interface-black !important;
+        color: $interface-black;
+
+        &:hover {
+            background-color: $interface-black;
+            border-color: $interface-white;
+            color: $interface-white !important;
+        }
+    }
+}

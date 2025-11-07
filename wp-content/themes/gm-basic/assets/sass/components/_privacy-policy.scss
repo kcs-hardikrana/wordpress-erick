@@ -1,0 +1,145 @@
+.termspage {
+    z-index: 1;
+    position: relative;    
+    &.insustry-main-section.services-main-section .custom-heading h3{
+        max-width: 136rem;
+    }
+    .container-inner {
+        padding-top: 12rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        @include media-down(desktop-large) {
+            padding-top: 5rem;
+        }
+
+        @include media-down(desktop) {
+            padding-top: 3rem;
+        }
+
+        @include media-down(laptop) {
+            padding-top: 2rem;
+        }
+
+        @include media-down(mobile) {
+            padding-top: 1rem;
+        }
+    }
+    a {
+        color: $interface-darkblue;        
+    }
+    .pt-50{
+        padding-top: 5rem;
+        @include media-down(desktop) {
+            padding-top: 4rem !important;
+          }
+        
+          @include media-down(laptop) {
+            padding-top: 3rem !important;
+          }
+          @include media-down(tablet) {
+            padding-top: 2rem !important;
+          }
+    }
+    .pt-100{
+        @include media-down(tablet) {
+            padding-top: 2rem !important;
+          }
+    }
+    h3, h4 {
+        color: $interface-black;
+        @extend %o-header--h3;
+        font-family: 'ObjectSansBold';
+        font-weight: weight(bold);
+        padding-bottom: 4rem;
+        max-width: 136rem;
+
+        @include media-down(desktop-large) {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        @include media-down(desktop) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }    
+
+    h4{
+        @extend %o-header--h4;      
+        font-size: size(subtitle, medium);
+        @include media-down(laptop) {
+            font-size: 2.4rem;
+        }
+
+        @include media-down(tablet-large) {
+            font-size: 2.2rem;
+        }
+
+        @include media-down(mobile) {
+            font-size: 1.8rem;
+        }
+        &.pb-0{
+            padding-bottom: 0;
+        }
+    }
+
+    p {
+        @extend %o-body-medium;
+        color: $interface-light-black;
+        padding-bottom: 3rem;
+        max-width: 135.9rem;
+        font-weight: weight(medium);
+
+        @include media-down(desktop-large) {
+            padding-bottom: 2rem;
+            max-width: 105rem;
+        }
+
+        @include media-down(desktop) {
+            padding-bottom: 1.5rem;
+            max-width: 105rem;
+        }
+
+        @include media-down(tablet-large) {
+            max-width: 100%;
+        }
+
+        strong {
+            font-family: family(dm-sans);
+            font-weight: weight(medium);
+            display: block;
+            @extend %o-paragraph-large;
+            max-width: 142rem;
+            color: $interface-black;
+            font-size: 2.6rem;
+            line-height: 4rem;
+            @include media-down(desktop) {
+                font-size: 2rem;
+                line-height: 3.4rem;
+              }
+          
+              @include media-down(laptop) {
+                font-size: 1.8rem;
+                line-height: 3rem;
+              }
+          
+              @include media-down(tablet-large) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+              }
+          
+              @include media-down(mobile) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+                max-width: 100%;
+              }
+        }        
+    }
+    ul.small-text li:not(:first-child):before{
+        display: none;
+    }
+    li{
+        max-width: 135.9rem;
+    }    
+}

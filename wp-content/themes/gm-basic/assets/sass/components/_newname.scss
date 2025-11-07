@@ -1,0 +1,100 @@
+.new-name-section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10.417vw;
+    z-index: zindex(float);
+
+    @include media-down(desktop) {
+        margin-top: 7.417vw;
+    }
+    // &:after {
+    //     content: '';
+    //     background: linear-gradient(
+    //       315.86deg,
+    //       #23a7e0 26.35%,
+    //       #2d2f8f 39.84%,
+    //       #702e8e 51.51%,
+    //       #e62e2e 64.74%,
+    //       #e98824 76.38%,
+    //       #ffcc06 85.54%
+    //     );
+    //     opacity: 0.6;
+    //     filter: blur(8.073vw);
+    //     transform: rotate(-60.47deg);
+    //     position: absolute;
+    //     width: 20.313vw;
+    //     height: 20.313vw;
+    //     top: 6.510vw;
+    //     right: -10.417vw;
+    // }    
+    &:after {
+        content: '';
+        background: linear-gradient(
+            315.86deg, 
+            #23A7E0 26.35%, 
+            #2D2F8F 39.84%, 
+            #702E8E 51.51%,
+            #E62E2E 64.74%,
+            #E98824 76.38%,
+            #FFCC06 85.54%
+        );
+        mix-blend-mode: difference;
+        opacity: 0.3;
+        filter: blur(18.490vw);
+        transform: rotate(38.02deg);
+        position: absolute;
+        width: 46.159vw;
+        height: 56.749vw;
+        left: 0;
+        top: 8.854vw;
+        right: 0;
+        margin: 0 auto;
+        z-index: zindex(under);
+        display: block;
+    }
+    .container-inner{
+        &.vc_col-sm-7 {
+            padding-right: 0 !important;
+        }
+    }
+    .text-desc{
+        p {            
+            @extend %o-body-medium;   
+            color: $interface-white;
+            margin-bottom: 2.604vw;            
+            max-width: 50.521vw;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include media-down(mobile) {
+                max-width: unset;
+            }
+        }
+    } 
+    .common-paragraph.o-header--h2{
+        margin-bottom: 3.125vw !important;
+        max-width: unset;
+        p{
+            color: $interface-white;
+        }
+        strong {                     
+            background: linear-gradient(92.28deg, #92263D 0%, #92263D 0%, #E72E2D 34.92%, #F28826 68.88%, #FFCB05 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    } 
+  
+    .wpb_single_image{
+        img {         
+            @include media-down(mobile) {
+                margin-top: 2rem;
+                width: 36rem;
+            }
+        }
+    }
+
+    
+}
+

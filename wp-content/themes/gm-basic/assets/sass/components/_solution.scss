@@ -1,0 +1,1216 @@
+// Footer form
+.footer-form {
+    position: relative;
+    z-index: 11;
+    margin-top: 20rem;
+
+    @include media-down(desktop-large) {
+        margin-top: 10rem;
+    }
+
+    @include media-down(laptop) {
+        margin-top: 8rem;
+    }
+
+    @include media-down(tablet-large) {
+        margin-top: 6rem;
+    }
+
+    @include media-down(tablet) {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    @include media-down(mobile) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .vc_column-inner {
+        padding-top: 0 !important;
+    }
+
+    .footer-form-section {
+        background-color: #F8F8F8;
+        border: 1px solid $interface-light-grey;
+    }
+
+    .footer-left-content {
+        padding: 3rem;
+
+        @include media-down(tablet) {
+            padding: 3rem 1.5rem 0;
+            width: 100%;
+        }
+
+        h2 {
+            color: $interface-light-black;
+            font-size: 3rem;
+            font-weight: weight(bold);
+            font-family: family(secondary);
+            line-height: normal;
+            margin-bottom: 1.5rem;
+
+            @include media-down(desktop) {
+                font-size: 2.8rem;
+            }
+
+            @include media-down(tablet-large) {
+                font-size: 2.6rem;
+            }
+
+            @include media-down(tablet) {
+                font-size: 2.4rem;
+                margin-bottom: 1rem;
+            }
+
+            @include media-down(mobile) {
+                font-size: 2.2rem;
+            }
+        }
+
+        p {
+            color: #4D4D4D;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+
+            @include media-down(desktop) {
+                font-size: 1.6rem;
+                line-height: normal;
+            }
+
+            @include media-down(tablet) {
+                font-size: 1.4rem;
+            }
+        }
+
+        .vc_column-inner {
+            // max-width: 490px;
+            max-width: 100%;
+
+            @include media-down(tablet) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .footer-right-form {
+        padding: 3rem;
+
+        @include media-down(tablet) {
+            padding: 1.5rem 1.5rem 3rem 1.5rem;
+            width: 100%;
+        }
+
+        .full-row-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px 15px -15px;
+
+            @include media-down(mobile) {
+                margin: 0 -15px 0 -15px;
+            }
+
+            .full-row-col {
+                padding: 0 15px;
+                width: 100%;
+
+                p {
+                    line-height: 0;
+                }
+
+                p>label {
+                    padding: 0;
+                    line-height: normal;
+                }
+
+                &.three-col {
+                    width: 33.33%;
+
+                    @include media-down(mobile) {
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+
+                .contatc-no {
+                    width: 100%;
+
+                    .intl-tel-input {
+                        .country-list.dropup {
+                            bottom: auto;
+                        }
+                    }
+
+                    .country-list {
+                        li {
+                            font-size: 1.6rem;
+                            line-height: normal;
+                            font-weight: normal;
+                            color: $interface-black;
+                            font-family: family(dm-sans);
+
+                            @include media-down(desktop) {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+
+                    p {
+                        flex-wrap: wrap;
+                        margin: 0;
+
+                        span:last-child {
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+
+                    #contact-no-error {
+                        margin: 0;
+                        padding: 0;
+                        bottom: auto;
+
+                        @include media-down(mobile) {
+                            position: static;
+                        }
+                    }
+                }
+            }
+        }
+
+        .privacy-check {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+
+            >div {
+                @include media-down(mobile) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            @include media-down(mobile) {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    .contact-form.common-form {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+
+        .o-button3 {
+            right: 0;
+            bottom: 0;
+            position: static;
+            margin-left: 0;
+            margin-top: 0;
+            height: 3.8rem;
+        }
+
+        p.contact-link {
+            margin-bottom: 0;
+            padding-top: 0;
+            font-size: 1.4rem;
+
+            .wpcf7-list-item {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .form p>label {
+            font-weight: 400;
+            font-size: 1.6rem;
+            margin-bottom: 0;
+
+            @include media-down(desktop) {
+                font-size: 1.4rem;
+            }
+        }
+
+        .form {
+            h2 {
+                font-size: 2.4rem;
+                color: #333333;
+                margin-bottom: 2rem;
+                font-weight: weight(medium);
+                font-family: family(dm-sans);
+
+                @include media-down(desktop) {
+                    font-size: 2.2rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                @include media-down(tablet) {
+                    font-size: 2.2rem;
+                }
+
+                @include media-down(mobile) {
+                    font-size: 2rem;
+                }
+            }
+
+            input {
+                height: 3.8rem;
+                border-radius: 0;
+                margin-top: 0.5rem !important;
+                padding: 1rem 1rem;
+
+                @include media-down(desktop) {
+                    height: 3.5rem;
+                }
+            }
+
+            textarea {
+                height: 7.6rem;
+                padding: 1rem;
+
+                @include media-down(desktop) {
+                    height: 7rem;
+                }
+            }
+
+            .intl-tel-input.allow-dropdown {
+                .selected-flag {
+                    height: 3.8rem;
+
+                    @include media-down(desktop) {
+                        height: 3.5rem;
+                    }
+                }
+            }
+        }
+
+        .wpcf7-response-output {
+            color: #FFCB05;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            background: linear-gradient(90deg, #2D2F8F 0%, #702E8E 100%);
+            border: none !important;
+            padding: 12px 15px !important;
+            margin: 20px 0 0 !important;
+            font-family: family(dm-sans);
+            font-weight: weight(bold);
+        }
+    }
+}
+
+footer.add-footer-form {
+    margin-top: -25rem;
+    padding-top: 25rem;
+
+    @include media-down(tablet) {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+// Solution Banner
+.banner-button {
+    position: relative;
+    z-index: 1;
+    margin-top: 3rem;
+
+    @include media-down(tablet) {
+        margin-top: 2rem;
+    }
+}
+
+.page-cdp-consultation {
+    .internal-banner {
+        &::after {
+            @include media-down(mobile) {
+                height: 40rem;
+            }
+        }
+
+        .banner-description {
+            max-width: 100%;
+        }
+    }
+}
+
+// Our CDP Consulting Services
+.insustry-main-section.services-main-section.cdp-tab-section-main {
+    margin-top: 0;
+
+    .vc_tta-container {
+        margin-bottom: 0;
+    }
+
+    &::after {
+        display: none;
+    }
+
+    @include media-down(desktop) {
+        .common-para p {
+            padding-top: 1rem;
+        }
+    }
+
+    // @include media-down(tablet) {
+    //     .common-para p {
+    //         padding-top: 2rem;
+    //     }
+    // }
+}
+
+.consulting-tabs {
+    padding-top: 5rem;
+
+    @include media-down(desktop) {
+        padding-top: 4rem;
+    }
+
+    @include media-down(tablet) {
+        padding-top: 3rem;
+    }
+
+    .vc_tta-tabs-container {
+        margin-right: 0 !important;
+
+        .vc_tta-tabs-list {
+            display: flex !important;
+
+            .vc_tta-tab {
+                margin-right: 3rem;
+                width: calc(20% - 2.5rem);
+                text-align: center;
+
+                @include media-down(tablet) {
+                    margin-right: 1.5rem;
+                    width: 20%;
+                }
+
+                &.vc_active {
+                    a {
+                        background-color: $interface-darkblue;
+                        color: $interface-white;
+                        border-color: $interface-darkblue;
+
+                        &::after,
+                        &::before {
+                            display: none !important;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    font-size: 1.8rem;
+                    color: #4D4D4D;
+                    font-family: family(dm-sans);
+                    font-weight: weight(bold);
+                    border: 1px solid $interface-black;
+                    border-radius: 0;
+                    padding: 2.2rem 1.7rem;
+                    background-color: $interface-white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    line-height: normal;
+
+                    @include media-down(desktop) {
+                        font-size: 1.6rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .vc_tta-panels-container {
+        .vc_tta-panels {
+            background-color: $interface-white !important;
+            border: 0 !important;
+
+            .vc_tta-panel-title>a {
+                @include media-down(mobile) {
+                    font-size: 1.6rem;
+                    padding: 1.5rem;
+                }
+            }
+
+            .vc_tta-panel {
+                @include media-down(mobile) {
+                    padding: 0;
+                }
+
+                .vc_tta-panel-body {
+                    padding: 7rem 0 0 0;
+                    border-radius: 0;
+
+                    @include media-down(desktop) {
+                        padding: 4rem 0 0 0;
+                    }
+
+                    .vc_row {
+                        @include media-down(mobile) {
+                            flex-direction: column-reverse;
+                        }
+                    }
+
+                    @include media-down(tablet) {
+                        padding: 5rem 0 0 0;
+                    }
+
+                    @include media-down(mobile) {
+                        padding: 1.5rem;
+                        margin-top: 0;
+                        border: 1px solid $interface-light-grey;
+                        margin: 0 1px;
+                    }
+
+                    .consulting-tabs-content {
+                        padding-right: 10rem;
+
+                        @include media-down(desktop) {
+                            padding-right: 5rem;
+                        }
+
+                        @include media-down(desktop) {
+                            padding-right: 3rem;
+                        }
+
+                        @include media-down(mobile) {
+                            padding-right: 0rem;
+                        }
+
+                        .o-button3 {
+                            a {
+                                box-shadow: none;
+                            }
+                        }
+
+                        h3 {
+                            font-weight: weight(bold);
+                            font-family: family(secondary);
+                            color: $interface-black;
+                            margin-bottom: 1.5rem;
+
+                            @include media-down(desktop) {
+                                margin-bottom: 1rem;
+                                font-size: 2.4rem;
+                            }
+
+                            @include media-down(mobile) {
+                                margin-bottom: 1rem;
+                                font-size: 2rem;
+                            }
+                        }
+
+                        .o-body-small {
+                            p {
+                                font-size: 1.8rem;
+                                color: $interface-black;
+                                line-height: 3rem;
+                                font-family: family(dm-sans);
+                                font-weight: weight(medium);
+                                margin-bottom: 4rem;
+
+                                @include media-down(desktop) {
+                                    font-size: 1.6rem;
+                                    line-height: 2.4rem;
+                                    margin-bottom: 2rem;
+                                }
+
+                                @include media-down(mobile) {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+
+                        .key-values {
+                            .key-values-row {
+                                margin-bottom: 2.5rem;
+
+                                @include media-down(desktop) {
+                                    margin-bottom: 1.5rem;
+                                }
+
+                                h4 {
+                                    font-weight: weight(bold);
+                                    font-family: family(secondary);
+                                    color: $interface-black;
+                                    font-size: 2.8rem;
+                                    margin-bottom: 1.2rem;
+
+                                    @include media-down(desktop) {
+                                        font-size: 2.4rem;
+                                        margin-bottom: 1rem;
+                                    }
+
+                                    @include media-down(laptop) {
+                                        font-size: 2.2rem;
+                                        margin-bottom: 0.8rem;
+                                    }
+
+                                    @include media-down(tablet) {
+                                        font-size: 2rem;
+                                    }
+
+                                    @include media-down(mobile) {
+                                        font-size: 1.8rem;
+                                    }
+                                }
+
+                                p {
+                                    font-size: 1.8rem;
+                                    color: #333333;
+                                    line-height: 3rem;
+                                    font-family: family(dm-sans);
+                                    font-weight: weight(regular);
+
+                                    @include media-down(desktop) {
+                                        font-size: 1.6rem;
+                                        line-height: 2.4rem;
+                                    }
+
+                                    @include media-down(tablet) {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .key-listing-wrap {
+                            width: 100%;
+                            margin: 2.2rem 0 1.6rem 0;
+
+                            h4 {
+                                font-weight: weight(bold);
+                                font-family: family(secondary);
+                                color: $interface-black;
+                                font-size: 2.8rem;
+
+                                @include media-down(desktop) {
+                                    font-size: 2.4rem;
+                                    margin-bottom: 1rem;
+                                }
+
+                                @include media-down(laptop) {
+                                    font-size: 2.2rem;
+                                    margin-bottom: 0.8rem;
+                                }
+
+                                @include media-down(tablet) {
+                                    font-size: 2rem;
+                                }
+                            }
+
+                            @include media-down(desktop) {
+                                margin: 1.5rem 0;
+                            }
+
+                            @include media-down(mobile) {
+                                margin: 1.5rem 0 0 0;
+                            }
+
+                            .key-listing {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin-top: 2rem;
+
+                                li {
+                                    background-color: rgba(45, 47, 143, 0.1);
+                                    color: $interface-darkblue;
+                                    font-size: 1.8rem;
+                                    margin-right: 2rem;
+                                    margin-bottom: 2rem;
+                                    font-family: family(dm-sans);
+                                    font-weight: weight(semibold);
+                                    padding: 1rem;
+                                    line-height: normal;
+
+                                    @include media-down(desktop) {
+                                        font-size: 1.4rem;
+                                        margin-right: 1rem;
+                                        margin-bottom: 1rem;
+                                        padding: 0.6rem 1rem;
+                                    }
+
+                                    // @include media-down(tablet) {
+                                    //     font-size: 1.4rem;
+                                    //     margin-right: 1rem;
+                                    //     margin-bottom: 1rem;
+                                    // }
+                                }
+                            }
+                        }
+                    }
+
+                    .consulting-tabs-image {
+                        @include media-down(mobile) {
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Our CDP Implementation Methodology
+.why-rysun-main-section.why-rysun-data.cdp-methodology {
+    margin-top: 0;
+
+    .custom-heading {
+        max-width: 100%;
+        margin-bottom: 0;
+
+        @include media-down(desktop) {
+            padding-bottom: 1rem;
+        }
+    }
+
+
+    .small-title {
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        @include media-down(mobile) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .wpb_text_column {
+        p {
+            color: $interface-white;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            position: relative;
+            z-index: 1;
+
+            @include media-down(desktop) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+
+            // @include media-down(tablet) {
+            //     font-size: 1.4rem;
+            // }
+        }
+    }
+
+    .impact-section {
+        margin: 0 -2.5rem !important;
+
+        @include media-down(desktop) {
+            margin: 0 -1.5rem !important;
+        }
+
+        @include media-down(tablet) {
+            padding-top: 0;
+        }
+
+        // @include media-down(laptop) {
+        //     margin: 0 -1.5rem !important;
+        // }
+
+        .impact-block {
+            padding: 0 2.5rem;
+
+            @include media-down(desktop) {
+                padding: 0 1.5rem;
+
+                .wpb_single_image img {
+                    max-height: 40px;
+                    width: auto;
+                }
+            }
+
+            // @include media-down(laptop) {
+            //     padding: 0 1.5rem;
+            // }
+
+            @include media-down(tablet) {
+                width: 33.33%;
+                margin-top: 3rem;
+            }
+
+            @include media-down(mobile) {
+                width: 100%;
+                margin-top: 1.5rem;
+            }
+
+            .impact-title {
+                margin-top: 0;
+                margin-bottom: 2.5rem;
+                font-weight: 700;
+
+                @include media-down(desktop) {
+                    margin-bottom: 1rem;
+                }
+
+                // @include media-down(tablet) {
+                //     margin-bottom: 1rem;
+                // }
+            }
+
+            >.vc_column-inner {
+                height: 100%;
+
+                @include media-down(desktop) {
+                    padding: 2rem !important;
+                }
+            }
+
+            .wpb_wrapper.vc_figure {
+                margin-bottom: 2.5rem;
+
+                @include media-down(desktop) {
+                    margin-bottom: 2rem;
+                }
+
+                @include media-down(tablet) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+// CDP Use Cases That Drive Business Value
+.cdp-business-value-section {
+    .services-blue-block {
+        .custom-heading {
+            @include media-down(desktop) {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        background-image: url(../images/bg-outer-img.webp);
+        width: 30.6rem;
+        height: 35.8rem;
+        position: absolute;
+        left: 0;
+        top: 39rem;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @include media-down(tablet) {
+            top: 18rem;
+        }
+    }
+
+    .service-brightening {
+        padding-left: 0;
+        padding-right: 0;
+
+        .small-title {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .impact-section {
+        margin: 0 -4rem !important;
+
+        @include media-down(desktop-large) {
+            margin: 0 -3rem !important;
+        }
+
+        @include media-down(desktop) {
+            margin: 0 -1.5rem !important;
+            padding-top: 3rem;
+        }
+
+        @include media-down(laptop) {
+            margin: 0 -2rem !important;
+        }
+
+        @include media-down(tablet) {
+            margin: 0 -1.5rem !important;
+        }
+
+        @include media-down(mobile) {
+            padding-top: 0rem;
+        }
+
+        .impact-block {
+            padding: 0 4rem;
+
+            @include media-down(desktop-large) {
+                padding: 0 3rem;
+            }
+
+            @include media-down(desktop) {
+                padding: 0 1.5rem;
+
+                .vc_column-inner {
+                    padding: 2rem !important;
+                }
+
+                .wpb_single_image img {
+                    max-height: 40px;
+                    width: auto;
+                }
+            }
+
+            @include media-down(laptop) {
+                padding: 0 2rem;
+            }
+
+            @include media-down(tablet) {
+                padding: 0 1.5rem;
+            }
+
+            @include media-down(mobile) {
+                width: 100% !important;
+                margin-top: 1.5rem;
+            }
+
+            .impact-title {
+                margin-top: 0;
+                margin-bottom: 1.8rem;
+                font-weight: weight(bold);
+                font-family: family(secondary);
+
+                @include media-down(desktop) {
+                    margin-bottom: 0.8rem;
+                }
+
+                @include media-down(tablet) {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            .wpb_text_column p {
+                margin-bottom: 4rem;
+                color: $interface-light-black;
+                font-size: 1.8rem;
+                line-height: 3rem;
+                position: relative;
+                z-index: 1;
+
+                @include media-down(desktop) {
+                    margin-bottom: 2rem;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                }
+
+                @include media-down(tablet) {
+                    margin-bottom: 1.5rem;
+                    font-size: 1.4rem;
+                }
+            }
+
+            >.vc_column-inner {
+                height: 100%;
+
+                @include media-down(mobile) {
+                    padding: 2rem 1.5rem !important
+                }
+            }
+
+            .wpb_wrapper.vc_figure {
+                margin-bottom: 3.5rem;
+
+                @include media-down(desktop) {
+                    margin-bottom: 1.5rem;
+                }
+
+                @include media-down(tablet) {
+                    margin-bottom: 1rem;
+                }
+
+            }
+
+            .key-listing {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    background-color: rgba(45, 47, 143, 0.1);
+                    color: $interface-darkblue;
+                    font-size: 1.6rem;
+                    margin-right: 2rem;
+                    margin-bottom: 2rem;
+                    font-family: family(dm-sans);
+                    font-weight: weight(semibold);
+                    padding: 1rem;
+                    line-height: normal;
+
+                    @include media-down(desktop) {
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        font-size: 1.4rem;
+                        padding: 0.6rem 1rem;
+                    }
+
+                    // @include media-down(tablet) {
+                    //     font-size: 1.4rem;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+// Keyfacts Counter
+.keyfacts-counter {
+    position: relative;
+
+    @include media-down(mobile) {
+
+        &.keyfact-section .counter-section p br {
+            display: block;
+        }
+
+        &.keyfact-section .counter-section .vc_col-sm-2:nth-last-child(-n+3) {
+            padding-bottom: 2.3rem;
+        }
+
+        &.keyfact-section .counter-section .vc_col-sm-2:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    &::after {
+        content: "" !important;
+        position: absolute;
+        background: linear-gradient(360deg, #FFFFFF -13.24%, #702E8E 44.56%, #2D2F8F 98.82%);
+        opacity: 0.05;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// Our CDP Success Stories
+.cdp-success-stories-main {
+    &.insustry-main-section.services-main-section {
+        margin-top: 0;
+
+        &::after {
+            display: none;
+        }
+
+        @include media-down(desktop) {
+            .common-para p {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+
+    .cdp-success-stories-row {
+        padding: 7rem 0 0 0;
+
+        @include media-down(desktop) {
+            padding: 4rem 0 0 0;
+        }
+
+        // @include media-down(tablet) {
+        //     padding: 5rem 0 0 0;
+        // }
+
+        @include media-down(mobile) {
+            padding: 3rem 0 0 0;
+        }
+    }
+
+    .cdp-success-stories-image {
+        padding-right: 9rem;
+
+        @include media-down(desktop-large) {
+            padding-right: 6rem;
+        }
+
+        @include media-down(desktop) {
+            padding-right: 5rem;
+        }
+
+        @include media-down(tablet) {
+            padding-right: 3rem;
+        }
+
+        @include media-down(mobile) {
+            margin-bottom: 1.5rem;
+            padding-right: 0;
+        }
+
+        .wpb_single_image img {
+            box-shadow: 15px 15px 70px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .cdp-success-stories-content {
+        // padding-left: 5rem;
+        // padding-right: 5rem;
+
+        // @include media-down(desktop) {
+        //     padding-left: 3rem;
+        //     padding-right: 3rem;
+        // }
+
+        // @include media-down(mobile) {
+        //     padding-left: 0;
+        //     padding-right: 0;
+        // }
+
+        h3 {
+            font-weight: weight(bold);
+            font-family: family(secondary);
+            color: $interface-black;
+            margin-bottom: 5rem;
+
+            @include media-down(desktop-large) {
+                margin-bottom: 3rem;
+            }
+
+            @include media-down(desktop) {
+                margin-bottom: 2rem;
+            }
+
+            @include media-down(tablet) {
+                margin-bottom: 1rem;
+                font-size: 2.4rem;
+            }
+
+            @include media-down(mobile) {
+                font-size: 2rem;
+            }
+        }
+
+        .o-body-small {
+            p {
+                font-size: 2.6rem;
+                color: $interface-light-black;
+                line-height: 4rem;
+                font-family: family(dm-sans);
+                font-weight: weight(regular);
+                margin-bottom: 3.5rem;
+
+                @include media-down(desktop-large) {
+                    font-size: 2.2rem;
+                    margin-bottom: 3rem;
+                }
+
+                @include media-down(desktop) {
+                    font-size: 1.8rem;
+                    line-height: normal;
+                    margin-bottom: 2rem;
+                }
+
+                @include media-down(laptop) {
+                    font-size: 1.6rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                @include media-down(tablet) {
+                    margin-bottom: 0;
+                }
+
+                @include media-down(mobile) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .success-story-records {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -1.5rem 3.5rem -1.5rem;
+
+            @include media-down(desktop) {
+                margin: 0 -1.5rem 2.5rem -1.5rem;
+            }
+
+            @include media-down(laptop) {
+                margin: 0 -1.5rem 1.5rem -1.5rem;
+            }
+
+            @include media-down(tablet) {
+                margin: 0 -0.5rem 1.5rem -0.5rem;
+            }
+
+            li {
+                max-width: 100%;
+                padding: 1.5rem;
+
+                @include media-down(tablet-large) {
+                    max-width: 33.33%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                @include media-down(tablet) {
+                    align-items: flex-end;
+                    padding: 1.5rem 0.5rem;
+                }
+
+                p {
+                    color: $interface-light-black;
+                    font-family: family(dm-sans);
+                    font-weight: weight(medium);
+                    font-size: 2.2rem;
+                    line-height: 3rem;
+                    margin-bottom: 0.4rem;
+
+                    @include media-down(desktop) {
+                        font-size: 1.6rem;
+                        line-height: normal;
+                    }
+
+                    @include media-down(mobile) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                h4 {
+                    font-size: 6rem;
+                    line-height: 8rem;
+                    font-weight: weight(bold);
+                    font-family: family(secondary);
+                    color: $interface-black;
+                    position: relative;
+                    width: 100%;
+
+                    @include media-down(desktop-large) {
+                        font-size: 4rem;
+                        line-height: 7rem;
+                    }
+
+                    @include media-down(desktop) {
+                        font-size: 3rem;
+                        line-height: 6rem;
+                    }
+
+                    @include media-down(tablet) {
+                        font-size: 2rem;
+                        line-height: 5rem;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 4rem;
+                        height: 0.6rem;
+                        background: $interface-darkblue;
+                        bottom: 0;
+                        left: 0;
+                        box-shadow: 0.1rem 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.1294117647);
+                    }
+                }
+            }
+        }
+    }
+}

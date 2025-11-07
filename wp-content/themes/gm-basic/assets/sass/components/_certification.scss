@@ -1,0 +1,168 @@
+.certificate-section {
+    background: linear-gradient(180deg, #FDF8FF 0%, rgba(255, 255, 255, 0) 100%);
+    padding-top: 10rem;
+
+    @include media-down(desktop-large) {
+        padding-top: 7rem;
+    }
+
+    @include media-down(laptop-large) {
+        padding-bottom: 6rem;
+    }
+
+    @include media-down(tablet-large) {
+        padding-top: 5rem;
+    }
+
+    @include media-down(mobile) {
+        padding-top: 3rem;
+        margin-top: 3.5rem;
+    }
+}
+.ourcertifications-page{
+    &:before{
+        display: block;
+        position: absolute;
+        background-image: url(../images/bg-outer-img.webp);
+        left: 0;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        top: 100px;
+        width: 288px;
+        height: 400px;
+        @include media-down(laptop-large) {
+            width: 150px;
+            height: 260px;
+        }
+        @include media-down(laptop) {
+            top: 60px;
+        }
+        @include media-down(tablet-large) {
+            width: 90px;
+            height: 160px;
+            top: -37px;
+        }
+        @include media-down(mobile) {
+            width: 60px;
+            height: 100px;
+            top: -25px;
+        }
+    }
+    .vc_row{
+        justify-content: space-between;
+        @include media-down(laptop-large) {
+            margin: 0 -15px !important;
+        }
+        &:after, &:before{
+            display: none;
+        }
+        &:last-child{
+            .vc_col-sm-6{
+                margin-bottom: 0;
+                @include media-down(mobile) {
+                    margin-bottom: 4rem;
+                }
+            } 
+        }
+    }
+    .vc_col-sm-6{
+        margin-bottom: 15rem;
+        max-width: 763px;
+        @include media-down(desktop-large) {
+            margin-bottom: 10rem;
+            max-width: 660px;
+        }
+        @include media-down(desktop) {
+            margin-bottom: 8rem;
+            max-width: 620px;
+        }
+        @include media-down(laptop-large) {
+            padding: 0 15px;
+            margin-bottom: 6rem;
+        }
+        @include media-down(tablet) {
+            margin-bottom: 5rem;
+        }
+        @include media-down(mobile) {
+            margin-bottom: 4rem;
+        }
+        .wpb_single_image{
+            position: relative;
+            border: 1px solid #CCCCCC;
+            background: $interface-white;
+            height: 380px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px !important;
+            @include media-down(desktop-large) {
+                height: 340px;
+            }
+            @include media-down(laptop-large) {
+                margin-bottom: 20px !important;
+                height: 290px;
+                img{
+                    max-height: 210px;
+                    width: auto;
+                    max-width: 400px;
+                }
+            }
+            @include media-down(tablet-large) {
+                height: 260px;
+                img{
+                    max-height: 190px;
+                    max-width: 350px;
+                }
+            }
+            @include media-down(tablet) {
+                height: 195px;
+                img{
+                    max-height: 145px;
+                    max-width: 290px;
+                }
+            }
+            @include media-down(mobile) {
+                margin-bottom: 15px !important;
+                height: 175px;
+                img{
+                    max-height: 120px;
+                    max-width: 250px;
+                }
+            }
+            .vc_figure{
+                width: 100%;
+            }
+        }
+        .o-body-medium{
+            font-weight: weight(bold);
+            color: $interface-black;
+            padding-bottom: 17px;
+            margin-bottom: 0;
+            strong{
+                font-weight: weight(regular);
+            }
+            @include media-down(tablet-large) {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+            @include media-down(mobile) {
+                padding-bottom: 12px;
+            }
+        }
+        p{
+            @extend %o-paragraph-medium;
+            color: $interface-light-black;
+            font-weight: weight(medium);
+            @include media-down(laptop-large) {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+            @include media-down(tablet) {
+                font-weight: weight(regular);
+            }
+            @include media-down(mobile) {
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

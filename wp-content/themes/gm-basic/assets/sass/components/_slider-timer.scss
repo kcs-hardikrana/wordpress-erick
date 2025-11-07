@@ -1,0 +1,151 @@
+
+.business-imapct {
+  position: relative;
+}
+
+.swiper-timer-bar, .autoplay-progress {
+  position: absolute;
+  top: 22rem;
+  right: 11rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 2px solid #CCCCCC;
+
+  @include media-down(desktop-large) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include media-down(mobile) {
+    width: 32px;
+    height: 32px;
+    top: -18rem;
+    right: 1rem;
+  }
+
+  &:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #CCCCCC;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+
+    @include media-down(mobile) {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .timer-circle {
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    background-color: transparent !important;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+  }
+  .timer-path {
+    fill: none;
+    stroke: $interface-darkblue;
+    stroke-width: 4;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: timer-animation linear infinite;
+  }
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #2D2F8F;
+  border-radius: 100%;
+  border: 2px solid #CCCCCC;
+
+  @include media-down(desktop-large) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include media-down(mobile) {
+    width: 32px;
+    height: 32px;
+    top: -18rem;
+    right: 1rem;
+  }
+
+  &:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #CCCCCC;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+
+    @include media-down(mobile) {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  z-index: 10;
+  width: 58px;
+  height: 58px;
+  stroke-width: 2px;
+  stroke: #2D2F8F;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+
+  @include media-down(desktop-large) {
+    width: 45px;
+    height: 48px;
+    left: -5px;
+    top: -6px;
+  }
+
+  @include media-down(tablet) {
+    width: 36px;
+    height: 36px;
+    left: -4px;
+    top: -4px;
+  }
+
+  @include media-down(mobile) {
+    width: 32px;
+    height: 33px;
+    left: -4px;
+    top: -4px;
+  }
+}
+
+@keyframes timer-animation {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+

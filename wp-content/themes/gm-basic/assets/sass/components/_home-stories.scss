@@ -1,0 +1,917 @@
+.stories-section {
+  @extend %pt-200;
+
+  .custom-heading {
+    color: $interface-black;
+  }
+
+  .o-body-medium {
+    p {
+      padding-top: 2rem;
+    }
+  }
+
+  .link {
+    padding-top: 2rem;
+  }
+
+  .customer-stories-wrapper {
+    padding-top: 6rem;
+    position: relative;
+    z-index: zindex(float);
+
+    .stories-container {
+      position: relative;
+      background: linear-gradient(92.82deg,
+          #2d2f8f 1.02%,
+          #702e8e 29.57%,
+          #93283e 64.43%,
+          #e62e2e 97.65%);
+      border-radius: 4rem;
+      height: 59.6rem;
+
+      .stories-img {
+        position: absolute;
+        right: 10rem;
+        bottom: 9.6rem;
+
+        img {
+          object-fit: cover;
+          object-position: center;
+          border-radius: 4rem;
+          width: 65rem;
+          height: 68rem;
+        }
+      }
+
+      .stories-content {
+        padding: 8rem;
+        max-width: 50%;
+        margin-top: 26rem;
+
+        .story-title {
+          font-size: size(title, h2-desktop);
+          line-height: lineheight(title, h2-desktop);
+          color: $interface-white;
+          font-weight: weight(extrabold);
+        }
+
+        .o-body-medium {
+          max-width: 77.4rem;
+          color: $interface-white;
+          padding-top: 3rem;
+        }
+
+        .o-button2 {
+          margin-top: 4rem;
+          display: inline-block;
+        }
+
+        @include media-down(desktop-large) {
+          top: 4rem;
+          left: 4rem;
+        }
+      }
+    }
+  }
+}
+
+#customer-stories-tabs {
+  display: flex;
+  margin: 4rem -3rem 0;
+  position: relative;
+  z-index: zindex(nav);
+
+  li {
+    width: 20%;
+    padding: 2rem 3rem 2rem 3rem;
+    border: 1px solid $interface-light-black;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 2.6rem;
+    margin: 0 3rem;
+
+    position: relative;
+    cursor: pointer;
+
+    a {
+      font-size: size(body, large-desktop);
+      line-height: lineheight(body, large-desktop);
+      color: $interface-white;
+      font-weight: weight(medium);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 2.6rem;
+      padding: 0.4rem;
+      background: linear-gradient(45deg, #92263d, #e72e2d, #f28826, #ffcb05);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: width 0.4s, opacity 1.1s;
+      transition-delay: width 2s;
+      display: block;
+    }
+
+    &.active,
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+
+      a {
+        color: $interface-white;
+      }
+    }
+
+    @include media-down(desktop-large) {
+      padding: 2rem 2rem 6rem 2rem;
+    }
+  }
+}
+
+.stories-section {
+  background-color: $interface-dark-black;
+  padding: 20rem 0;
+
+  .custom-heading {
+    color: $interface-white;
+  }
+
+  .o-body-medium p {
+    color: $interface-white;
+  }
+
+  .link a {
+    color: $interface-white;
+
+    &:visited {
+      color: $interface-white;
+    }
+
+    &::after {
+      background: $interface-white;
+    }
+  }
+}
+
+.featured-custom-stories {
+  .featured-custom-stories-inner {
+    .custom-title h2 {
+      color: $interface-black;
+    }
+  }
+}
+
+.our-industries-section {
+  &.featured-stories-listing {
+    background-color: $interface-dark-grey;
+    border-radius: 7rem 7rem 0 0;
+
+    .small-title {
+      color: $interface-black;
+    }
+
+    .our-industries-section-btm {
+      margin: 0 -1.5rem;
+
+      .o-header--h2 {
+        color: $interface-black;
+        max-width: 120rem;
+
+        strong {
+          color: $interface-darkblue;
+        }
+      }
+    }
+
+
+
+    .featured-section-btm {
+      //calc is (width screen - container + container padding) / 2 
+      padding-left: calc((100vw - 1840px + 300px) / 2);
+      overflow: hidden;
+      overflow-x: auto;
+
+      @include media-down(desktop-large) {
+        padding-left: calc((100vw - 1450px + 110px) / 2);
+      }
+
+      @include media-down(desktop) {
+        padding-left: calc((100vw - 1330px + 110px) / 2);
+      }
+
+      @include media-down(laptop-large) {
+        padding-left: calc((100vw - 1280px + 110px) / 2);
+      }
+
+      @include media-down(laptop) {
+        padding-left: calc((100vw - 1200px + 110px) / 2);
+      }
+
+      @include media-down(tablet-large) {
+        padding-left: 5.5rem;
+      }
+
+      @include media-down(mobile) {
+        padding-left: 2rem;
+      }
+
+      .indutries-section-btm {
+        margin: 0 -30px;
+
+        @include media-down(desktop) {
+          margin: 0 -20px;
+        }
+
+        .industries-block {
+          margin: 0 30px;
+          width: 950px;
+          flex: 0 0 auto;
+
+          &:nth-child(even) {
+            margin-top: 80px;
+
+            @include media-down(mobile) {
+              margin-top: 3.5rem;
+            }
+
+            @include media-down(mobile-small) {
+              margin-top: 2rem;
+            }
+          }
+
+          @include media-down(desktop) {
+            margin: 0 20px;
+            width: 850px;
+          }
+
+          @include media-down(laptop-large) {
+            width: 70rem;
+          }
+
+          @include media-down(tablet) {
+            width: 44rem;
+          }
+
+          @include media-down(mobile) {
+            width: 44rem;
+            margin: 0 1rem;
+          }
+
+          @include media-down(mobile-small) {
+            width: 31rem;
+            margin: 0 0.6rem;
+          }
+
+          .industries-img {
+            height: 70rem;
+
+            @include media-down(tablet) {
+              height: 42rem !important;
+            }
+
+            @include media-down(mobile) {
+              height: 35rem !important;
+            }
+
+            &:after {
+              opacity: 0.5;
+              bottom: -18rem;
+              right: auto;
+              left: -9rem;
+            }
+
+            &:before {
+              height: 375px;
+
+              @include media-down(tablet) {
+                height: 245px;
+              }
+            }
+
+            @include media-down(desktop) {
+              height: 60rem;
+            }
+          }
+
+          .industries-caption {
+            p {
+              max-width: 58rem;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.business-impact-section {
+  background: linear-gradient(180deg, #FDF8FF 0%, rgba(255, 255, 255, 0.00) 100%);
+  @extend %pt-100;
+
+  .custom-heading h3 {
+    max-width: 124rem;
+  }
+
+  .business-imapct {
+    margin-top: 7rem;
+
+    @include media-down(desktop) {
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 1366px) {
+      margin-top: 4rem;
+    }
+
+    @include media-down(tablet-large) {
+      margin-top: 3rem;
+    }
+
+    @include media-down(mobile) {
+      margin-top: 2rem;
+      overflow: visible;
+    }
+  }
+
+  .swiper-timer-bar,
+  .autoplay-progress {
+    top: 0;
+    right: 1px;
+
+    @include media-down(tablet) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @include media-down(mobile) {
+      width: 28px;
+      height: 28px;
+      top: -18rem;
+    }
+  }
+
+  .slider-content {
+    display: flex;
+
+    @include media-down(mobile) {
+      flex-wrap: wrap;
+    }
+
+
+    .slider-content-inner {
+      width: 42.4%;
+      height: 85rem;
+      padding: 5rem 5rem;
+      background: linear-gradient(180deg, #2D2F8F 0%, #702E8E 100%);
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+      position: relative;
+      z-index: zindex(nav);
+      text-align: left;
+
+      @include media-down(desktop-large) {
+        width: 44.5%;
+        height: 70rem;
+        padding: 4rem 4rem;
+      }
+
+      @include media-down(desktop) {
+        width: 47.5%;
+        height: 55rem;
+      }
+
+      @media (max-width: 1366px) {
+        padding: 4rem 4rem;
+        width: 52.5%;
+      }
+
+      @include media-down(laptop) {
+        width: 57.5%;
+        height: 60rem;
+        padding: 3rem 3rem;
+      }
+
+      @include media-down(tablet-large) {
+        width: 37.5%;
+        height: 50rem;
+        padding: 2rem 2rem;
+      }
+
+      @include media-down(tablet) {
+        width: 44.5%;
+        height: 42rem;
+      }
+
+      @include media-down(mobile) {
+        width: 100%;
+        height: 40rem;
+        display: block;
+        flex-wrap: wrap;
+        order: 2;
+        padding: 3rem 2rem;
+      }
+
+      &:before {
+        content: "";
+        background-image: url(../images/business-impact-bg.webp);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 55rem;
+        height: 63.4rem;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+        @include media-down(desktop-large) {
+          width: 47.6rem;
+          height: 54.4rem;
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+
+        @include media-down(desktop) {
+          width: 48.6rem;
+          height: 55.4rem;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+
+        @media (max-width: 1366px) {
+          width: 48.6rem;
+          height: 51.4rem;
+        }
+
+        @include media-down(laptop) {
+          width: 43rem;
+          height: 49.4rem;
+        }
+
+        @include media-down(tablet-large) {
+          width: 37.2rem;
+          height: 41.4rem;
+        }
+
+        @include media-down(tablet) {
+          width: 32.2rem;
+          height: 36.4rem;
+        }
+
+        @include media-down(mobile) {
+          width: 23.2rem;
+          height: 11.4rem;
+          left: -2.3rem;
+        }
+      }
+
+      &:after {
+        content: "";
+        background: linear-gradient(209.24deg, #23A7E0 0%, rgba(35, 167, 224, 0.5) 21.06%, rgba(45, 47, 143, 0.28) 43.02%);
+        opacity: 0.7;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: zindex(under);
+        display: block;
+      }
+
+      .slider-title {
+        @extend %o-body-large;
+        color: $interface-white;
+        max-width: 45rem;
+        font-weight: weight(bold);
+        font-family: family(dm-sans);
+        padding-top: 3rem;
+        // height: 14rem;
+        overflow: hidden;
+        // margin-bottom: 15rem;
+
+        @include media-down(desktop-large) {
+          padding-top: 2rem;
+        }
+
+        @include media-down(desktop) {
+          padding-top: 1.5rem;
+        }
+
+        @include media-down(tablet-large) {
+          font-size: 1.8rem;
+          line-height: 2.8rem;
+          // margin-bottom: 10rem;
+        }
+
+        @include media-down(tablet) {
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+          // margin-bottom: 10rem;
+          // height: 13rem;
+          // margin-bottom: 4rem;
+        }
+      }
+
+      .slider-description {
+        @extend %o-body-large;
+        color: $interface-white;
+        max-width: 43.4rem;
+        font-weight: weight(medium);
+        font-family: family(dm-sans);
+        padding-top: 2rem;
+        padding-bottom: 7rem;
+
+        @include media-down(mobile) {
+          padding-top: 1rem;
+          padding-bottom: 2rem;
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+      }
+
+      .slider-category {
+        @extend %o-paragraph-medium;
+        color: $interface-white;
+        font-family: family(dm-sans);
+        font-weight: weight(medium);
+      }
+
+      .slider-solutions {
+        @extend %o-paragraph-medium;
+        color: $interface-white;
+        font-family: family(dm-sans);
+        font-weight: weight(regular);
+        padding-top: 4rem;
+
+        @include media-down(desktop-large) {
+          padding-top: 3rem;
+        }
+
+        @include media-down(desktop) {
+          padding-top: 2rem;
+        }
+
+        @include media-down(laptop) {
+          padding-top: 3rem;
+        }
+
+        @include media-down(tablet) {
+          padding-top: 1rem;
+        }
+
+        &.solution-description {
+          font-weight: weight(regular);
+          padding-top: 4rem;
+
+          @include media-down(desktop-large) {
+            padding-top: 3rem;
+          }
+
+          @include media-down(desktop) {
+            padding-top: 2rem;
+          }
+
+          @include media-down(laptop) {
+            padding-top: 1.5rem;
+          }
+
+          @include media-down(tablet) {
+            padding-top: 1rem;
+            font-size: 1.6rem;
+            line-height: normal;
+          }
+        }
+      }
+
+      .o-button3 {
+        margin-top: 10rem;
+
+        @include media-down(desktop-large) {
+          margin-top: 8rem;
+        }
+
+        @include media-down(desktop-large) {
+          margin-top: 6rem;
+        }
+
+        @include media-down(tablet-large) {
+          margin-top: 2rem;
+        }
+
+        @include media-down(tablet) {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .business-img {
+      display: flex;
+      align-items: end;
+
+      @include media-down(tablet-large) {
+        width: 62.5%;
+      }
+
+      @include media-down(tablet) {
+        width: 55.5%;
+      }
+
+      @include media-down(mobile) {
+        width: 100%;
+
+        picture,
+        img {
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 65.2rem;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 1.5s ease;
+        transform: scale(1);
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        @include media-down(desktop-large) {
+          height: 55rem;
+        }
+
+        @include media-down(desktop) {
+          height: 45rem;
+        }
+
+        @include media-down(laptop) {
+          height: 50rem;
+        }
+
+        @include media-down(tablet-large) {
+          height: 42rem;
+        }
+
+        @include media-down(tablet) {
+          height: 34rem;
+        }
+
+        @include media-down(mobile) {
+          height: 23.2rem;
+        }
+
+      }
+
+    }
+  }
+
+  .swiper-pagination-fraction {
+    position: absolute;
+    bottom: 5rem;
+    left: 46rem;
+    color: $interface-light-light-grey;
+    @extend %o-body-large;
+    font-family: family(dm-sans);
+    font-weight: weight(medium);
+
+    @include media-down(desktop-large) {
+      bottom: 4rem;
+      left: 40rem;
+    }
+
+    @include media-down(desktop) {
+      bottom: 3rem;
+      left: 37rem;
+    }
+
+    @include media-down(laptop) {
+      bottom: 3rem;
+      left: 35rem;
+    }
+
+    @include media-down(tablet-large) {
+      bottom: 2rem;
+      left: 28rem;
+    }
+
+    @include media-down(tablet) {
+      bottom: 2rem;
+      left: 27rem;
+    }
+
+    @include media-down(mobile) {
+      display: none;
+    }
+
+    span {
+      color: $interface-light-light-grey;
+
+      &.swiper-pagination-current {
+        color: $interface-white;
+      }
+    }
+  }
+
+  .swiper-button-next {
+    left: 8rem;
+
+    @include media-down(desktop) {
+      left: 5rem;
+    }
+
+    @include media-down(tablet-large) {
+      left: 3rem;
+    }
+
+    @include media-down(mobile) {
+      margin-left: 4rem;
+      bottom: 3rem;
+    }
+
+    @include media-down(mobile-small) {
+      left: 12rem;
+      width: 100vw;
+      right: 0;
+    }
+
+    // @include media-down(tablet) {
+    //   left: 6rem;
+    // }
+
+    // @include media-down(mobile) {
+    //   display: none;
+    // }
+
+    &:after {
+      content: "\e911";
+      font-family: 'icomoon' !important;
+      color: $interface-white;
+      font-weight: weight(regular);
+
+      @include media-down(laptop) {
+        font-size: 2rem;
+      }
+
+      @include media-down(tablet-large) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &:before {
+      content: "";
+      left: -27px;
+      position: absolute;
+      width: 1px;
+      height: 4rem;
+      background-color: $interface-light-light-grey;
+
+      @include media-down(desktop) {
+        left: -15px;
+        height: 3rem;
+      }
+
+      @include media-down(laptop) {
+        height: 3rem;
+      }
+
+      @include media-down(tablet-large) {
+        left: -13px;
+        height: 2rem;
+      }
+
+      @media (max-width: 480px) {
+        left: 16.7rem;
+      }
+
+      @media (max-width: 360px) {
+        left: -10px;
+        position: relative !important;
+
+      }
+
+    }
+
+  }
+
+  .swiper-buttons {
+    @include media-down(mobile-small) {
+      position: relative;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      @include media-down(mobile-small) {
+        position: absolute;
+        margin-left: 0;
+        left: unset;
+        width: 6rem;
+        height: 3rem;
+      }
+    }
+
+    .swiper-button-prev {
+      @include media-down(mobile-small) {
+        right: 4rem;
+      }
+    }
+
+    .swiper-button-next {
+      @include media-down(mobile-small) {
+        right: 0;
+      }
+
+      &:before {
+        @include media-down(mobile-small) {
+          left: unset;
+          right: 47px;
+        }
+
+        @media (max-width: 360px) {
+          left: -1rem;
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    left: 4rem;
+
+    @include media-down(tablet-large) {
+      left: 2rem;
+    }
+
+    @include media-down(mobile-small) {
+      left: 10rem;
+      right: 0;
+    }
+
+    // @include media-down(mobile) {
+    //   display: none;
+    // }
+
+    &:after {
+      content: "\e911";
+      font-family: 'icomoon' !important;
+      transform: rotate(180deg);
+      font-weight: weight(regular);
+
+      @include media-down(laptop) {
+        font-size: 2rem;
+      }
+
+      @include media-down(tablet-large) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    bottom: 4.5rem;
+    z-index: 1;
+    font-size: 20px;
+    position: absolute;
+    color: $interface-white;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+
+    @include media-down(desktop) {
+      font-size: 16px;
+    }
+
+    @include media-down(desktop) {
+      bottom: 3rem;
+    }
+
+    @include media-down(laptop) {
+      bottom: 3rem;
+    }
+
+    @include media-down(tablet-large) {
+      font-size: 1.4rem;
+      bottom: 2rem;
+    }
+
+    @include media-down(mobile) {
+      left: 10rem;
+      width: 100%;
+
+    }
+
+    &:hover:after {
+      color: #E98824;
+    }
+  }
+}
+
+.industries {
+  @include media-down(mobile) {
+    margin-top: 2rem;
+  }
+}

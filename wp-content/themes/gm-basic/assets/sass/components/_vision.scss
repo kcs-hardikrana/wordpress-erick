@@ -1,0 +1,48 @@
+.company-vision {
+    margin-top: 20rem;
+    height: 70rem;
+    display: flex;
+    align-items: center;
+
+    .custom-heading {
+        h2 {
+            color: $interface-white;
+        }
+    }
+
+    .vision-description {
+        p {
+            color: $interface-white;
+            max-width: 67.5rem;
+            padding-top: 2rem;
+        }
+    }
+
+    .service-content-block {
+        box-shadow: 20px 20px 90px rgba(0, 0, 0, 0.4);
+    } 
+
+    @include media-down(desktop-large) {
+        height: 60rem;
+    }
+}
+
+.home-vision-new {
+    padding: 13.5rem 0;
+
+    .home-vision-new-inner {
+        .custom-heading h2 {
+            color: $interface-white;
+            text-align: right;
+        }
+
+        .o-header--h5 {
+            max-width: 91.4rem;
+            color: $interface-light-grey;
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+            padding-top: 4rem;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.grid-image-section {
+    .wpb_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        img {
+            text-align: right;
+            height: 23.6rem;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            border-radius: 2rem;
+        }
+
+        .grid-img-box1 {
+            width: 51.2%;
+        }
+
+        .grid-img-box2 {
+            margin-left: 3rem;
+            width: 37.1%;
+        }
+
+        .grid-img-box3 {
+            width: 54%;
+            margin-top: 3rem;
+        }
+    }
+}

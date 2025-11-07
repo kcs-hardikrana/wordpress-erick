@@ -1,0 +1,154 @@
+.whyrysun-section{
+  padding-bottom: 30rem;
+  padding-top: 17rem;
+  position: relative;
+
+  @include media-down(desktop-large) {
+    padding-bottom: 25rem;
+    padding-top: 12rem;
+  }
+
+  @include media-down(desktop) {
+    padding-bottom: 20rem;
+    padding-top: 10rem;
+  }
+
+  @include media-down(laptop-large) {
+    padding-bottom: 18rem;
+  }
+  @include media-down(tablet) {
+    padding-bottom: 15rem;
+    padding-top: 6rem;
+  }
+  @include media-down(mobile) {
+    padding-bottom: 14.5rem;
+    padding-top: 4.5rem;
+  }
+
+  @include media-down(tablet) {
+    padding-bottom: 16rem;
+    padding-top: 6rem;
+  }
+
+  &.vc_row:before{
+    content: "";
+    display: block;
+    background: linear-gradient(315.86deg, #23A7E0 26.35%, #2D2F8F 39.84%, #702E8E 51.51%, #E62E2E 64.74%, #E98824 76.38%, #FFCC06 85.54%);
+    opacity: 0.3;
+    filter: blur(8.073vw);
+    transform: rotate(32.14deg);
+    width: 46.354vw;
+    height: 46.615vw;
+    position: absolute;
+    left: -11.719vw;
+    bottom: -13.021vw;
+  }
+  &.vc_row:after{
+    content: "";
+    display: block;
+    background: linear-gradient(315.86deg, #23A7E0 26.35%, #2D2F8F 39.84%, #702E8E 51.51%, #E62E2E 64.74%, #E98824 76.38%, #FFCC06 85.54%);
+    opacity: 0.5;
+    filter: blur(8.073vw);
+    transform: rotate(-60.47deg);
+    width: 20.208vw;
+    height: 20.313vw;
+    position: absolute;
+    right: -4.688vw;
+    top: -1.563vw;
+  }
+  
+  .small-title{
+    padding-bottom: 5rem;
+    color: $interface-black;
+    
+    @include media-down(desktop-large) {
+      padding-bottom: 3rem;
+    }
+    @include media-down(laptop) {
+      padding-bottom: 1.5rem;
+    }
+    @include media-down(mobile) {
+      padding-bottom: 1rem;
+    }
+      
+  }
+  .common-paragraph{
+    max-width: 1000px;
+  }
+
+  .whyrysun-block{
+    padding-top: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    @include media-down(desktop-large) {
+      padding-top: 4rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include media-down(desktop) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    @include media-down(laptop-large) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    @include media-down(tablet) {
+      padding-top: 3rem;
+    }
+    @include media-down(mobile) {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      padding-top: 2rem;
+    }
+    > div{
+      padding: 0 5.5rem;
+      @include media-down(desktop) {
+        padding: 0 3.5rem;
+      }
+      @include media-down(laptop-large) {
+        padding: 0 2rem;
+      }
+      @include media-down(laptop) {
+        padding: 0 1.5rem;
+      }
+      @include media-down(mobile) {
+        padding: 0;
+      }
+    }
+    .vc_col-sm-4{
+      width: 47%;
+      @include media-down(mobile) {
+        width: 100%;
+        padding-bottom: 2rem;
+      }
+    }
+    .vc_col-sm-8{
+      width: 53%;
+      @include media-down(mobile) {
+        width: 100%;
+      }
+      p{
+        @extend %o-body-medium;
+        padding-bottom: 5rem;
+        @include media-down(laptop) {
+          padding-bottom: 3rem;
+        }
+        @include media-down(tablet) {
+          padding-bottom: 2.5rem;
+        }
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+    }
+    .o-header--h3{
+      font-family: 'ObjectSansBold';
+      font-weight: weight(regular);
+      strong{
+        color: $interface-darkblue;
+      }
+    }
+  }
+  
+}
