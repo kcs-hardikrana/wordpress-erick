@@ -1,0 +1,205 @@
+$asset-path: 'assets';
+$font-directory: '../fonts';
+$font-size-zero: 0;
+$font-size-base: 62.5%;
+
+@font-face {
+  font-family: 'ObjectSansBold';
+  src: url($font-directory + '/ObjectSansBold.eot');
+  src: url($font-directory + '/ObjectSansBold.eot') format('embedded-opentype'),
+    url($font-directory + '/ObjectSansBold.woff2') format('woff2'),
+    url($font-directory + '/ObjectSansBold.woff') format('woff'),
+    url($font-directory + '/ObjectSansBold.ttf') format('truetype'),
+    url($font-directory + '/ObjectSansBold.svg#ObjectSansBold') format('svg');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ObjectSansRegular';
+  src: url($font-directory + '/ObjectSansRegular.eot');
+  src: url($font-directory + '/ObjectSansRegular.eot')
+      format('embedded-opentype'),
+    url($font-directory + '/ObjectSansRegular.woff2') format('woff2'),
+    url($font-directory + '/ObjectSansRegular.woff') format('woff'),
+    url($font-directory + '/ObjectSansRegular.ttf') format('truetype'),
+    url($font-directory + '/ObjectSansRegular.svg#ObjectSansRegular')
+      format('svg');
+  font-display: swap;
+}
+
+$font-family: (
+  primary: #{'ObjectSansRegular'},
+  secondary: #{'ObjectSansBold'},
+  dm-sans: #{'DM Sans'},
+  icon: #{'icomoon'},
+);
+
+$font-weight: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  extraboldblack: 900,
+);
+
+$font-size: (
+  title: (
+    h1: 10rem,
+    h1-desktop: 7rem,
+    h1-laptop-large: 6rem,
+    h1-laptop: 5rem,
+    h1-tablet-large: 4rem,
+    h1-tablet: 3rem,
+    h1-mobile: 2.4rem,
+    h2: 6rem,
+    h2-desktop-large: 4.5rem,
+    h2-desktop: 4rem,
+    h2-laptop: 3rem,
+    h2-tablet: 2.4rem,
+    h2-mobile: 1.8rem,
+    h3: 4rem,
+    h3-desktop: 3rem,
+    // h3-desktop: 3rem,
+    h3-laptop: 2.8rem,
+    h3-tablet-large: 2.4rem,
+    h3-tablet: 2.2rem,
+    h4: 3rem,
+    h4-desktop: 2.6rem,
+    h4-tablet: 2rem,
+    h5: 2.604vw,
+    h5-tablet: 2rem,
+    h6: 2.292vw,
+    h6-tablet: 1.8rem,
+  ),
+  subtitle: (
+    large: 3rem,
+    large-tablet: 2rem,
+    medium: 2.8rem
+  ),
+  body:
+    (
+      large: 3rem,
+      large-desktop: 2.4rem,
+      large-tablet: 1.6rem,
+      medium: 2.8rem,
+      medium-desktop: 2.2rem,
+      medium-tablet: 1.6rem,
+      small: 2rem,
+    ),
+  paragraph: (
+    large: 2.4rem,
+    medium: 1.8rem,
+    small: 1.6rem,
+    extra-small: 1.4rem,
+  ),
+  // icon: (
+  //   large: 2rem,
+  //   medium: 1.8rem,
+  //   small: 1.6rem,
+  //   extra-small: 1rem
+  // ),,,,,,,
+);
+
+$line-height: (
+  title: (
+    h1: 12rem,
+    h1-desktop: 8rem,
+    h1-laptop-large: 7rem,
+    h1-laptop: 6rem,
+    h1-tablet-large: 5rem,
+    h1-tablet: 4rem,
+    h1-mobile: 3.2rem,
+    h2: 9rem,
+    h2-desktop-large: 6.5rem,
+    h2-desktop: 5rem,
+    h2-laptop: 4.5rem,
+    h2-tablet: 3.4rem,
+    h2-tablet-large: 3.6rem,
+    h2-mobile: 2.6rem,
+    h3: 6rem,
+    h3-desktop: 4rem,
+    // h3-desktop: 4.5rem,
+    h3-laptop: 3.8rem,
+    h3-tablet-large: 3.4rem,
+    h3-tablet: 3.2rem,
+    h4: 4rem,
+    h4-desktop: 3.4rem,
+    h4-tablet: 2.6rem,
+    h5: 6.8rem,
+    h5-tablet: 2.6rem,
+    h6: 4.4rem,
+    h6-tablet: 1.8rem,
+  ),
+  subtitle: (
+    large: 4rem,
+    large-tablet: 3rem,
+    medium: 4rem,
+    medium-tablet: 2.8rem,
+  ),
+  body:
+    (
+      large: 4rem,
+      large-desktop: 3.4rem,
+      large-tablet: 1.6rem,
+      medium: 4rem,
+      medium-desktop: 3.2rem,
+      medium-tablet: 2.4rem,
+      small: 3rem,
+    ),
+  paragraph: (
+    large: 3.4rem,
+    medium: 2.8rem,
+    small: 2.4rem,
+    extra-small: 2.4rem,
+  ),
+  icon: (
+    large: 2.6rem,
+    medium: 2.2rem,
+  ),
+);
+
+@mixin font($family: null, $type: null, $size: null, $weight: null) {
+  @if $family {
+    font-family: family($family);
+  }
+  @if $type and $size {
+    font-size: map-get(map-get($font-size, $type), $size);
+  }
+  @if $weight {
+    font-weight: weight($weight); /* stylelint-disable-line */
+  }
+}
+
+@function weight($key) {
+  @if map-has-key($font-weight, $key) {
+    @return map-get($font-weight, $key);
+  }
+  @warn 'Unknown `#{$key}` in $font-weight.';
+  @return null;
+}
+
+@function family($key) {
+  @if map-has-key($font-family, $key) {
+    @return map-get($font-family, $key);
+  }
+  @warn 'Unknown `#{$key}` in $font-family.';
+  @return null;
+}
+
+@function size($key, $value) {
+  @if map-has-key($font-size, $key) {
+    @return map-get(map-get($font-size, $key), $value);
+  }
+  @warn 'Unknown `#{$key}` in $font-size.';
+  @return null;
+}
+
+@function lineheight($key, $value) {
+  @if map-has-key($line-height, $key) {
+    @return map-get(map-get($line-height, $key), $value);
+  }
+  @warn 'Unknown `#{$key}` in $line-height.';
+  @return null;
+}

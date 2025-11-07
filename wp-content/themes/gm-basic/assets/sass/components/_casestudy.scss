@@ -1,0 +1,1069 @@
+.casestudy-main-section {
+    position: relative;
+    margin-top: 15rem;
+
+    @include media-down(desktop-large) {
+        margin-top: 10rem;
+    }
+
+    @include media-down(desktop) {
+        margin-top: 8rem;
+    }
+
+    @include media-down(laptop-large) {
+        margin-top: 6rem;
+    }
+
+    @include media-down(tablet-large) {
+        margin-top: 5rem;
+    }
+
+    @include media-down(tablet) {
+        margin-top: 4rem;
+    }
+
+    .custom-heading h3 {
+        max-width: 110rem;
+    }
+
+    .common-para {
+        p {
+            color: $interface-black;
+            padding-top: 4rem;
+            font-weight: weight(medium);
+            max-width: 136rem;
+
+            @include media-down(desktop) {
+                padding-top: 4rem;
+            }
+
+            @include media-down(laptop) {
+                padding-top: 3rem;
+            }
+
+            @include media-down(mobile) {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    &:after {
+        content: "";
+        background-image: url(../images/bg-outer-img.webp);
+        background-repeat: no-repeat;
+        width: 34.6rem;
+        height: 46.8rem;
+        position: absolute;
+        left: 0;
+        top: 3rem;
+        z-index: zindex(under);
+
+        @include media-down(desktop-large) {
+            top: 7rem;
+        }
+
+        @include media-down(tablet-large) {
+            width: 25.6rem;
+            height: 25.8rem;
+            background-size: 100%;
+            top: 3rem;
+        }
+
+        @include media-down(mobile) {
+            top: 1rem;
+        }
+    }
+
+}
+
+.blueboxrow {
+    padding-top: 5rem;
+
+    @include media-down(desktop) {
+        padding-top: 4rem;
+    }
+
+    @include media-down(tablet) {
+        padding-top: 3rem;
+    }
+
+    .vc_col-sm-3 {
+        position: relative;
+        padding: 4rem;
+        min-height: 28rem;
+
+        @include media-down(tablet) {
+            padding: 3rem;
+            min-height: auto;
+        }
+
+        @include media-down(mobile) {
+            padding: 2rem;
+        }
+
+        &:nth-child(1) {
+            background-color: $interface-darkblue;
+        }
+
+        &:nth-child(2) {
+            background-color: #42449B;
+        }
+
+        &:nth-child(3) {
+            background-color: #5759A5;
+        }
+
+        &:nth-child(4) {
+            background-color: #6C6EB1;
+        }
+
+    }
+
+    .o-header--h3 {
+        font-weight: weight(bold);
+        color: $interface-white;
+        z-index: zindex(float);
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .common-para p {
+        color: $interface-white;
+        padding-top: 0;
+        z-index: zindex(float);
+        position: relative;
+    }
+}
+
+// .casestudy-block {
+//     padding-top: 0px;
+// }
+
+.casestudy-who {
+    padding-top: 15rem;
+    align-items: center;
+
+    @include media-down(desktop-large) {
+        padding-top: 10rem;
+    }
+
+    @include media-down(desktop) {
+        padding-top: 8rem;
+    }
+
+    @include media-down(laptop-large) {
+        padding-top: 6rem;
+    }
+
+    @include media-down(tablet-large) {
+        padding-top: 5rem;
+    }
+
+    @include media-down(tablet) {
+        padding-top: 4rem;
+    }
+
+    .o-header--h3 {
+        color: $interface-black;
+        font-weight: weight(bold);
+        font-family: family(secondary);
+        padding-bottom: 2rem;
+
+        @include media-down(tablet-large) {
+            padding-bottom: 0;
+        }
+
+        @include media-down(mobile) {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .common-para {
+
+        color: $interface-black;
+        max-width: 126rem;
+        padding-bottom: 10rem;
+
+        @include media-down(desktop) {
+            padding-top: 2rem;
+            padding-bottom: 7rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding-top: 1.2rem;
+            padding-bottom: 2.5rem;
+        }
+
+        @include media-down(mobile) {
+            padding-top: 0;
+            padding-bottom: 2rem;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        p {
+            font-weight: weight(medium);
+
+            a {
+                font-weight: weight(bold);
+                color: $interface-darkblue;
+
+                &:visited,
+                &:hover {
+                    color: #E98824;
+                }
+            }
+        }
+
+        ul {
+            padding-top: 3.5rem;
+
+            @include media-down(desktop) {
+                padding-top: 1.5rem;
+            }
+        }
+
+        .after-listing-para {
+            padding-top: 3.5rem;
+
+            @include media-down(desktop) {
+                padding-top: 1.5rem;
+            }
+        }
+
+        &.parasubtitle {
+            padding: 0;
+        }
+    }
+
+}
+
+.vcenter {
+    align-items: center;
+    justify-content: center;
+}
+
+.max600 {
+    max-width: 60rem;
+
+    @include media-down(laptop) {
+        max-width: 56rem;
+    }
+
+    @include media-down(tablet-large) {
+        max-width: 43rem;
+    }
+
+    @include media-down(mobile) {
+        max-width: 100%;
+    }
+}
+
+.casestudy-overview {
+    margin: 0 -3.5rem !important;
+
+    @include media-down(desktop) {
+        margin: 0 -2.5rem !important;
+    }
+
+    @include media-down(tablet-large) {
+        margin: 0 -1.5rem !important;
+    }
+
+    @include media-down(tablet) {
+        margin: 0 -0.5rem !important;
+    }
+
+    @include media-down(mobile) {
+        margin: 0 !important;
+    }
+
+    .overview-block {
+        padding: 0 3.5rem;
+
+        @include media-down(desktop) {
+            padding: 0 2.5rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding: 0 1.5rem;
+        }
+
+        @include media-down(tablet) {
+            padding: 0 0.5rem;
+        }
+
+        @include media-down(mobile) {
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        &>.vc_column-inner {
+            position: relative;
+            padding: 3rem 3rem !important;
+            // height: 15.8rem;
+            background: linear-gradient(90deg, #2D2F8F 50%, #702E8E 100%);
+            box-shadow: 1rem 1rem 6rem 0 rgba(0, 0, 0, 0.20);
+            display: flex;
+            height: 100%;
+
+            @include media-down(desktop-large) {
+                padding: 3rem 2rem !important;
+            }
+
+            @include media-down(desktop) {
+                padding: 2rem 1.5rem !important;
+                // height: 14.8rem;
+            }
+
+            @include media-down(laptop) {
+                // height: 13.8rem;
+            }
+
+            @include media-down(tablet-large) {
+                padding: 1rem 1.5rem !important;
+            }
+
+            @include media-down(mobile) {
+                height: auto;
+                padding: 1.5rem 1.5rem !important;
+            }
+        }
+
+        .overview-img {
+            position: absolute;
+            left: 3rem;
+            top: 3rem;
+            height: 7rem;
+
+            @include media-down(desktop-large) {
+                left: 2rem;
+            }
+
+            @include media-down(desktop) {
+                left: 1.5rem;
+                top: 2rem;
+            }
+
+            img {
+                object-fit: cover;
+                object-position: center;
+
+                @include media-down(desktop) {
+                    width: 80%;
+                }
+
+                @include media-down(laptop) {
+                    width: 60%;
+                }
+
+                @include media-down(tablet-large) {
+                    width: 58%;
+                }
+            }
+        }
+
+        .o-body-medium {
+            color: $interface-white;
+            @extend %o-body-medium;
+            font-weight: weight(bold);
+            font-family: family(secondary);
+            padding-left: 11rem;
+
+            @include media-down(desktop) {
+                padding-left: 8rem;
+            }
+
+            @include media-down(laptop) {
+                padding-left: 6rem;
+            }
+
+            @include media-down(tablet-large) {
+                padding-left: 5.5rem;
+            }
+        }
+
+        .o-paragraph-medium {
+            @extend %o-paragraph-medium;
+            color: $interface-white;
+            font-family: family(dm-sans);
+            font-weight: weight(medium);
+            padding-left: 11rem;
+            padding-top: 1rem;
+            // height: 7.5rem;
+            overflow: hidden;
+
+            @include media-down(desktop) {
+                padding-left: 8rem;
+                // height: 7rem;
+            }
+
+            @include media-down(laptop) {
+                padding-left: 6rem;
+            }
+
+            @include media-down(tablet-large) {
+                padding-left: 5.5rem;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                // height: 8rem;
+            }
+
+            @include media-down(tablet) {
+                // height: 7.2rem;
+
+                br {
+                    display: none;
+                }
+            }
+
+            @include media-down(mobile) {
+                height: auto;
+            }
+        }
+    }
+}
+
+.impact-section {
+    &.casestudy-impace-section {
+
+        @include media-down(mobile) {
+            padding-top: 2rem;
+        }
+
+        .impact-block {
+            >.vc_column-inner {
+                height: 25rem;
+
+                @include media-down(desktop) {
+                    height: 23rem;
+                }
+
+                @include media-down(mobile) {
+                    height: auto;
+                }
+            }
+
+            .impact-title {
+                @extend %o-body-small;
+
+                @include media-down(desktop) {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+
+                @include media-down(tablet-large) {
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                }
+
+                @include media-down(tablet) {
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    bottom: 2rem;
+                    left: 1.5rem;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                @include media-down(mobile) {
+                    margin-top: 1rem;
+                }
+
+            }
+
+            .impact-img img {
+                @include media-down(desktop) {
+                    width: 20%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}
+
+.casestudy-who {
+    .custom-heading {
+        font-size: 5rem;
+        line-height: 7rem;
+        font-weight: weight(bold);
+        color: $interface-black;
+        font-family: family(secondary);
+        max-width: 65.1rem;
+
+        @include media-down(desktop-large) {
+            font-size: 4.5rem;
+            line-height: 6rem;
+        }
+
+        @include media-down(desktop) {
+            font-size: 4rem;
+            line-height: 5.5rem;
+        }
+
+        @include media-down(laptop) {
+            font-size: 3rem;
+            line-height: 4.4rem;
+            max-width: 50rem;
+        }
+
+        @include media-down(tablet) {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+
+        @include media-down(mobile) {
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.casestudy-detail-title {
+    .custom-heading {
+        font-size: 5rem;
+        line-height: 7rem;
+        font-weight: weight(bold);
+        color: $interface-black;
+        font-family: family(secondary);
+        max-width: 136rem;
+        padding-bottom: 4rem;
+
+        @include media-down(desktop-large) {
+            font-size: 4.5rem;
+            line-height: 6rem;
+        }
+
+        @include media-down(desktop) {
+            font-size: 4rem;
+            line-height: 5.5rem;
+        }
+
+        @include media-down(laptop) {
+            font-size: 3rem;
+            line-height: 4.4rem;
+        }
+
+        @include media-down(tablet) {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+
+        @include media-down(mobile) {
+            font-size: 2rem;
+            line-height: 3rem;
+            max-width: 100%;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.casestudy-bg-gradient {
+    background: linear-gradient(180deg, #F1F0F7 0%, rgba(255, 255, 255, 0.00) 100%);
+
+    .custom-heading {
+        font-size: 5rem;
+        line-height: 7rem;
+        font-weight: weight(bold);
+        color: $interface-black;
+        font-family: family(secondary);
+        max-width: 136rem;
+        padding-bottom: 4rem;
+
+        @include media-down(desktop-large) {
+            font-size: 4.5rem;
+            line-height: 6rem;
+        }
+
+        @include media-down(desktop) {
+            font-size: 4rem;
+            line-height: 5.5rem;
+        }
+
+        @include media-down(laptop) {
+            font-size: 3rem;
+            line-height: 4.4rem;
+        }
+
+        @include media-down(tablet) {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+
+        @include media-down(mobile) {
+            font-size: 2rem;
+            line-height: 3rem;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.share-block {
+    display: flex;
+
+    @include media-down(mobile) {
+        flex-wrap: wrap;
+    }
+
+    .download-pdf-btn {
+        background: linear-gradient(90deg, #2D2F8F 0%, #702E8E 100%);
+        box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 0.13);
+        font-size: 2.2rem;
+        line-height: 3rem;
+        font-family: family(dm-sans);
+        color: $interface-white;
+        padding: 2rem 3rem 2rem 8.5rem;
+        margin-left: 3rem;
+        position: relative;
+        margin-top: 10rem;
+
+        @include media-down(desktop-large) {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            margin-top: 8rem;
+            padding: 1.5rem 3rem 1.5rem 8.5rem;
+        }
+
+        @include media-down(desktop) {
+            margin-top: 6rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding: 0.8rem 2rem 0.8rem 6.5rem;
+        }
+
+        @include media-down(mobile) {
+            padding: 0.8rem 2rem 0.8rem 5.5rem;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            margin-top: 3rem;
+            margin-left: 1rem;
+        }
+
+        @include media-down(mobile-small) {
+            padding: 0.8rem 2rem 0.8rem 5.5rem;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            margin-top: 3rem;
+            margin-left: 1rem;
+        }
+
+        @media (max-width: 400px) {
+            margin-top: 1.5rem;
+            margin-left: 0;
+        }
+
+        &::before {
+            content: "";
+            background-image: url(../images/pdf-icon.png);
+            position: absolute;
+            left: 3rem;
+            z-index: 99;
+            width: 4rem;
+            height: 4rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-repeat: no-repeat;
+
+            @include media-down(desktop) {
+                width: 3rem;
+                height: 3rem;
+                background-size: 100%;
+            }
+
+            @include media-down(tablet-large) {
+                width: 2.5rem;
+                height: 2.5rem;
+                left: 2rem;
+            }
+        }
+
+        &:hover {
+            background: linear-gradient(90deg, #E98824 0%, #2D2F8F 100%);
+            box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.13);
+            color: $interface-white;
+            transition: background 0.5s ease-out;
+        }
+    }
+
+    .social-share-links {
+        border: 0.1rem solid $interface-light-light-grey;
+        padding: 1.8rem 2.2rem;
+        display: flex;
+        margin-top: 10rem;
+
+        a+a {
+            i {
+                padding-right: 0;
+            }
+        }
+
+        @include media-down(desktop-large) {
+            margin-top: 8rem;
+            padding: 1.5rem 2.2rem;
+        }
+
+        @include media-down(desktop) {
+            margin-top: 6rem;
+            padding: 1rem 2rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding: 0.8rem 1.5rem;
+        }
+
+        @include media-down(mobile) {
+            margin-top: 3rem;
+            padding: 0.5rem 1.5rem;
+        }
+
+        p {
+            @extend %o-body-small;
+            font-weight: weight(bold);
+            font-family: family(secondary);
+            padding-right: 1.8rem;
+
+            @include media-down(tablet-large) {
+                font-size: 1.8rem;
+                line-height: 3rem;
+            }
+
+            @include media-down(mobile) {
+                font-size: 1.6rem;
+                line-height: 3.4rem;
+                padding-right: 1rem;
+            }
+        }
+
+        a {
+
+            i {
+                color: #808080;
+                padding: 0 1.2rem;
+
+                @include media-down(mobile) {
+                    padding: 0 0.8rem;
+                }
+            }
+
+            i.spark-facebook1 {
+                font-size: 2rem;
+
+                @include media-down(mobile) {
+                    font-size: 1.6rem;
+                }
+
+                &:hover {
+                    color: #4267B2;
+                }
+            }
+
+            i.spark-linkedin1 {
+                font-size: 2.4rem;
+
+                @include media-down(mobile) {
+                    font-size: 2rem;
+                }
+
+                &:hover {
+                    color: #0077b5;
+                }
+            }
+
+            i.spark-twitter-icon {
+                font-size: 1.9rem;
+
+                @include media-down(mobile) {
+                    font-size: 1.6rem;
+                }
+
+                &:hover {
+                    color: #1DA1F2;
+                }
+            }
+        }
+    }
+}
+
+.success-story-detail-section {
+    .fancybox-container {
+        z-index: 10000000;
+    }
+
+    #download-pdf-form {
+        width: 42rem;
+        border: 1.5px solid $interface-light-grey;
+        background: #F8F8F8;
+        box-shadow: 1.5rem 1.5rem 9rem 0 rgba(0, 0, 0, 0.07);
+        padding: 4rem 4rem;
+
+        @include media-down(desktop-large) {
+            padding: 3rem 3rem;
+        }
+
+        @include media-down(mobile) {
+            padding: 2rem 2rem;
+            width: 100%;
+        }
+
+        h2 {
+            @extend %o-body-small;
+            color: $interface-black;
+            font-weight: weight(bold);
+            font-family: family(secondary);
+        }
+
+        p {
+            @extend %o-paragraph-medium;
+            color: #4D4D4D;
+            font-weight: weight(medium);
+            font-family: family(dm-sans);
+        }
+
+        label {
+            margin-top: 3rem;
+            @extend %o-paragraph-medium;
+            color: $interface-black;
+            font-family: family(dm-sans);
+            font-weight: weight(medium);
+            margin-bottom: 0;
+            width: 100%;
+
+            @include media-down(desktop-large) {
+                margin-top: 2rem;
+            }
+
+            @include media-down(desktop) {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+        }
+
+        input {
+            background-color: $interface-white !important;
+            border: 0.1rem solid $interface-light-grey;
+            border-radius: 0;
+            padding: 0.7rem 1.5rem;
+            margin-top: 0.5rem;
+            height: 5rem;
+            color: $interface-light-black;
+
+            @include media-down(desktop) {
+                height: 4.5rem;
+            }
+
+            @include media-down(laptop) {
+                height: 4rem;
+            }
+
+            @include media-down(tablet-large) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+
+            &#contact-no {
+                padding-left: 5.5rem;
+            }
+        }
+
+        .h-captcha {
+            margin-top: 3rem;
+        }
+
+        .o-button3 {
+            input {
+                padding: 1.3rem 2rem 1.2rem 2rem;
+                margin-top: 5rem;
+                color: $interface-white;
+
+                @include media-down(desktop) {
+                    height: auto;
+                    padding: 1rem 2rem;
+                }
+
+                @include media-down(tablet-large) {
+                    margin-top: 4rem;
+                }
+
+                @include media-down(mobile) {
+                    margin-top: 4rem;
+                }
+            }
+        }
+
+        .error {
+            color: $interface-red;
+            @extend %o-paragraph-extra-small;
+            margin-top: 0.5rem;
+        }
+
+        // .fancybox-button {
+        //     position: relative;
+
+        //     &:after {
+        //         content: "";
+        //         background-image: url(../images/gallery-close-icon.png);
+        //         position: absolute;
+        //         top: -5rem;
+        //     }
+        // }
+    }
+
+    .internal-banner:after {
+        @include media-down(mobile) {
+            height: 30rem;
+        }
+    }
+}
+
+.casestudy-listing-page {
+    .post .blog-banner-content {
+        position: relative;
+
+        .o-button3 {
+            margin-top: 5rem;
+            position: absolute;
+            bottom: 4rem;
+
+            @include media-down(desktop-large) {
+                margin-top: 6rem;
+            }
+
+            @include media-down(tablet-large) {
+                margin-top: 7rem;
+                bottom: 2rem;
+            }
+        }
+    }
+
+
+    @include media-down(tablet-large) {
+        .blogs-banner .banner-inner .blog-banner-content {
+            padding: 2rem 2rem;
+
+            .o-body-large {
+                height: 6rem;
+                padding-top: 1rem;
+            }
+
+            .solutions {
+                padding-top: 2rem;
+            }
+
+            .post-excerpt {
+                height: 6rem;
+            }
+        }
+    }
+
+    @include media-down(tablet) {
+        .blogs-banner .banner-inner .blog-banner-content {
+            .post-excerpt {
+                height: 6rem;
+            }
+
+            .solutions {
+                padding-top: 1rem;
+                height: 5.8rem;
+                overflow: hidden;
+            }
+
+            .o-button3 {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @include media-down(mobile) {
+        .blogs-banner .banner-inner .blog-banner-content {
+            padding: 2rem 2rem 7rem 2rem;
+
+            .post-excerpt {
+                height: 5rem;
+            }
+        }
+
+    }
+}
+
+#h-captcha-response-002quv1uyi46c-error {
+    position: absolute;
+    left: 0;
+    bottom: -2.5rem;
+}
+
+
+/* story sticky section css start */
+
+.story-sticky-section {
+    clear: both;
+
+    .story-sticky-left {
+        height: 25rem;
+        display: inline-block;
+        position: sticky !important;
+        top: 20rem;
+
+        @include media-down(mobile) {
+            position: initial !important;
+            height: auto;
+        }
+    }
+
+    .story-sticky-right {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+/* story sticky section css end */
+
+
+//success story common listing dot position
+.success-story-detail-section,
+.news-detail-section,
+.event-detail-section {
+    .common-listing ul li {
+        &::before {
+            top: 2.5rem;
+
+            @include media-down(desktop-large) {
+                top: 1.9rem;
+            }
+
+            @include media-down(desktop) {
+                top: 1.9rem;
+            }
+
+            @media (max-width: 1366px) {
+                top: 1.8rem;
+            }
+
+            @include media-down(tablet-large) {
+                top: 1.6rem;
+            }
+
+            @include media-down(tablet) {
+                top: 1.6rem;
+            }
+
+            @include media-down(mobile) {
+                top: 1.2rem;
+            }
+        }
+    }
+}

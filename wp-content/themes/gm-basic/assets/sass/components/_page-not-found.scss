@@ -1,0 +1,263 @@
+body.error404 {
+    .site-main {
+        padding-top: 11rem;
+
+        @include media-down(mobile) {
+            padding-top: 57px;
+        }
+    }
+
+
+    footer {
+        margin-top: 0px;
+    }
+}
+
+.not-found {
+    padding: 13rem 0px 18rem;
+    z-index: zindex(nav);
+    position: relative;
+    background: $interface-white;
+
+
+    @include media-down(desktop-large) {}
+
+    @include media-down(desktop) {}
+
+    @include media-down(laptop-large) {}
+
+    @include media-down(laptop) {}
+
+    @include media-down(tablet-large) {}
+
+    @include media-down(mobile) {
+        padding: 5rem 0px 5rem;
+    }
+
+    &__body {
+        .common-para {
+            p {
+                color: $interface-black;
+                padding-bottom: 4rem;
+                max-width: 78rem;
+                font-weight: weight(medium);
+
+                @include media-down(desktop-large) {
+                    padding-bottom: 3rem;
+                }
+
+                @include media-down(desktop) {
+                    padding-bottom: 4rem;
+                }
+
+                @include media-down(laptop) {
+                    padding-bottom: 3rem;
+                }
+
+                @include media-down(mobile) {
+                    padding-bottom: 2rem;
+                }
+
+
+            }
+        }
+
+
+
+        h1 {
+            font-size: 9rem;
+            line-height: 11rem;
+            color: $interface-black;
+            font-weight: weight(bold);
+            padding-bottom: 3rem;
+            font-family: family(secondary);
+
+            @include media-down(desktop) {
+                font-size: 8rem;
+                line-height: 9rem;
+            }
+
+            @include media-down(laptop) {
+                font-size: 7rem;
+                line-height: 7rem;
+            }
+
+            @include media-down(tablet-large) {
+                font-size: 6rem;
+                line-height: 6rem;
+            }
+
+            @include media-down(tablet) {
+                font-size: 5rem;
+                line-height: 5rem;
+                padding-bottom: 2rem;
+            }
+
+            @include media-down(mobile) {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
+
+        .o-header--h2 {
+            color: $interface-darkblue;
+            font-weight: weight(bold);
+            padding-bottom: 17px;
+            font-family: family(secondary);
+        }
+
+        .o-body-small {
+            color: $interface-black;
+            padding-bottom: 4rem;
+
+            a {
+                color: $interface-darkblue;
+                font-weight: weight(bold);
+                text-decoration: underline;
+            }
+
+            @include media-down(tablet-large) {
+                max-width: 480px;
+
+                br {
+                    display: none;
+                }
+            }
+
+            @include media-down(tablet) {
+                max-width: 370px;
+            }
+
+            @include media-down(mobile) {
+                padding-bottom: 2rem;
+            }
+        }
+
+        .img-not-404 {
+            @include media-down(mobile) {
+                width: 100%;
+            }
+
+            img {
+                @include media-down(desktop) {
+                    width: 75%;
+                }
+
+                @include media-down(tablet) {
+                    width: 85%;
+                }
+
+                @include media-down(mobile) {
+                    width: 65%;
+                    margin: auto;
+                    text-align: center;
+                    display: flex;
+                }
+            }
+        }
+
+    }
+
+
+    &::before {
+        content: "";
+        display: block;
+        background: url(../images/404-bg.jpg) no-repeat left top;
+        background-size: 100% auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: zindex(under);
+
+        @include media-down(tablet-large) {
+            background-size: 100% 100%;
+            top: 1rem;
+        }
+
+        @include media-down(mobile) {
+            background-position: center top;
+            background: url(../images/404-bg-mobile.jpg) no-repeat left top;
+            top: 30rem;
+            background-size: 100%;
+        }
+
+        @include media-down(mobile-small) {
+            background-image: none;
+        }
+    }
+}
+
+.no-results {
+    max-width: 173rem;
+    margin: 0px auto;
+    padding: 13rem 0px 13rem 0px;
+    min-height: auto;
+
+    &::before {
+        background-image: none;
+    }
+
+    .not-found__body {
+        &::before {
+            content: "";
+            display: block;
+            background: url(../images/no-results-img.jpg) no-repeat;
+            background-position: right center;
+            background-size: auto auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: zindex(under);
+
+            @include media-down(desktop) {
+                background-size: 50% auto;
+                background-position: right center;
+            }
+
+            @include media-down(tablet-large) {
+                background-size: 50% auto;
+                background-position: right center;
+            }
+
+            @include media-down(mobile) {
+                background-image: none;
+            }
+
+        }
+    }
+
+    .page-title {
+        @extend %o-header--h3;
+        color: $interface-blueDark;
+        font-family: family(secondary);
+        font-weight: weight(bold);
+    }
+
+    .page-content {
+        p {
+            @extend %o-paragraph-medium;
+            color: $interface-light-black;
+            font-family: family(dm-sans);
+        }
+    }
+
+    .page-header {
+        border-bottom: 0;
+    }
+
+    @include media-down(mobile) {
+        padding: 5rem 0px 5rem;
+    }
+}
+
+// body {
+//     &.search-no-results {
+//         .header-main {
+//             background: $interface-blueDark;
+//         }
+//     }
+// }

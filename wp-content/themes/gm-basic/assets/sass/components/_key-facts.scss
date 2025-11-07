@@ -1,0 +1,54 @@
+.key-facts-section {
+    padding-top: 20rem;
+
+    .custom-heading {
+        color: $interface-black;
+        font-weight: weight(extrabold);
+        text-align: center;
+    }
+    .key-fact-listing {
+        padding-top: 8.2rem;
+
+        .key-fact-block {
+            border-left: 1px solid $interface-light-black;
+            justify-content: center;
+            display: inline-grid;
+
+            .o-body-medium  {
+                color: $interface-light-black;
+                font-weight: weight(bold);
+            }
+            .o-header--h3 {
+                color: $interface-black;
+                padding-top: 1rem;
+                font-weight: weight(extrabold);
+            }
+
+            &:first-child {
+                border-left: 0;
+            }
+
+            &:last-child {
+                justify-content: end;
+            }
+        }
+
+        .key-office {
+            width: 21%;
+        }
+        .key-customers {
+            width: 31.8%;
+        }
+        .key-projects {
+            width: 28.7%;
+        }
+        .key-team {
+            width: 18.5%;
+        }
+    }  
+}
+.home-facts-section {
+    .custom-heading h3 {
+        max-width: 960px;
+    }
+}

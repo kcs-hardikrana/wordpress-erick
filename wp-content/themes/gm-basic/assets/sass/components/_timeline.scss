@@ -1,0 +1,104 @@
+.timeline-section {
+    padding-top: 20rem;
+
+    .custom-heading {
+        color: $interface-black;
+        font-weight: weight(extrabold);
+        padding: 0 15rem;
+    }
+}
+.timeline-wrapper {
+    background-image: url(../images/timeline-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15rem;    
+    background-size: 68%;
+    margin-top: 6rem;
+    
+    .timeline-container {
+        background-color: $interface-white;
+        padding: 4rem;
+        box-shadow: 20px 20px 90px rgba(0, 0, 0, 0.15);
+        width: 48%;
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+        min-height: 43rem;
+
+        .timeline-title {
+            color: $interface-blue;
+            @extend %o-header--h2;
+            font-weight: weight(extrabold);
+        }
+
+        .timeline-desc {
+            font-size: 2.4rem;
+            line-height: 3.8rem;
+            color: $interface-grey;
+            max-width: 78.4rem;
+        }
+    }
+}
+.timelineSwiper-btm {
+    padding-top: 6rem;
+    position: relative;
+
+    .swiper-wrapper {
+        display: flex;
+
+        .swiper-slide {
+            li {
+                padding: 3.2rem;
+
+                a {
+                    @extend %o-header--h6;
+                    color: $interface-light-black;
+                    font-weight: weight(extrabold);
+                    padding: 3.2rem;
+                }                
+            }
+
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        border: 1px solid $interface-black;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        &:after {
+            content: "\e904";
+            font-family: 'icomoon' !important;
+            color: $interface-black;
+            font-size: 1rem;
+        }
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        &:after {
+            content: "\e903";
+            font-family: 'icomoon' !important;
+            color: $interface-black;
+            font-size: 1rem;
+        }
+    }
+}

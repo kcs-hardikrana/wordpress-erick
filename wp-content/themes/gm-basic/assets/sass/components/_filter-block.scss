@@ -1,0 +1,36 @@
+.filter-content {
+    background-color: $interface-grey;
+    padding: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+    .o-body-large {
+        color: $interface-white;
+        padding-right: 3rem;
+        font-weight: weight(semibold);
+    }
+
+    .select-filter {
+        padding: 0 3rem;
+        width: 48rem;
+
+        select {
+            border: 0;
+            background: transparent;
+            border-bottom: 1px solid #dddddd;
+            color: $interface-white;
+            @extend %o-paragraph-large;
+            width: 100%;
+            padding-bottom: 1rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("../images/down-select-arrow.svg");
+            background-position: right 10px center;
+            background-repeat: no-repeat;
+            background-size: auto 35%;
+        }
+    }
+    
+}

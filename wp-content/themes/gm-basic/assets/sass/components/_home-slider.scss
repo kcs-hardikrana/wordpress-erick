@@ -1,0 +1,405 @@
+.hero-banner{
+    .hero-img{
+        img{
+            display: block;
+            width: 100%;
+            
+            @include media-down(mobile) {
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+    }
+    .hero-content{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding-top: 29rem;
+        @include media-down(desktop-large) {
+            padding-top: 23rem;
+        }
+        @include media-down(desktop) {
+            padding-top: 20rem;
+        }
+        @include media-down(laptop-large) {
+            padding-top: 18rem;
+        }
+        @include media-down(laptop) {
+            padding-top: 17rem;
+        }
+        @include media-down(tablet) {
+            padding-top: 11rem;
+        }
+        @include media-down(mobile) {
+            padding-top: 10rem;
+        }
+        h2, h1{
+            font-size: 7rem;
+            line-height: 9rem;
+            font-weight: weight(bold);
+            color: $interface-white;
+            padding-bottom: 4rem;
+            max-width: 675px;
+            @include media-down(desktop-large) {
+                font-size: 6rem;
+                line-height: 8rem;
+            }
+            @include media-down(desktop) {
+                font-size: 6rem;
+                line-height: 8rem;
+            }
+            @include media-down(laptop-large) {
+                font-size: 5rem;
+                line-height: 7rem;
+            }
+            @include media-down(tablet-large) {
+                font-size: 3.5rem;
+                line-height: 4.5rem;
+                padding-bottom: 3rem;
+            }
+            @include media-down(tablet) {
+                font-size: 3rem;
+                line-height: 4rem;
+                padding-bottom: 2rem;
+            }
+            @include media-down(mobile) {
+                font-size: 2.5rem;
+                line-height: 3.5rem;
+            }
+        }
+        p{
+            font-size: 3rem;
+            line-height: 5rem;
+            font-weight: weight(regular);
+            color: $interface-white;
+            padding-bottom: 5rem;
+            max-width: 795px;
+            @include media-down(desktop-large) {
+                font-size: 2.6rem;
+                line-height: 4.4rem;
+                max-width: 700px; 
+            }
+            @include media-down(laptop-large) {
+                font-size: 2.2rem;
+                line-height: 4rem;
+                padding-bottom: 3.5rem;
+            }
+            @include media-down(tablet-large) {
+                font-size: 2rem;
+                line-height: 3.8rem;
+                padding-bottom: 3rem;
+            }
+            @include media-down(tablet) {
+                font-size: 1.8rem;
+                line-height: 3rem;
+                padding-bottom: 2.5rem;
+            }
+            @include media-down(mobile) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+        }
+    }
+}
+
+.home-banner{
+    .home-banner-item {
+        width: 100%; 
+        background-color: #08082e; 
+        display: flex; 
+        background-image: url('https://phpdemo03.kcspl.in/RysunMVP/wp-content/uploads/2023/07/bottom-circle.png'); 
+        background-position: bottom left; 
+        background-repeat: no-repeat;
+
+        .banner-left{
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            width: 35%; 
+            justify-content: center;
+            animation-duration: 1.5s;
+            .banner-leftsub{
+                padding-left: 110px;
+                @include media-down(desktop-large) {
+                    padding-left: 8rem;
+                }
+                @include media-down(desktop) {
+                    padding-left: 6rem;
+                }
+                @include media-down(tablet-large) {
+                    padding-left: 2rem;
+                }
+            }
+            .herobanner-title{
+                color: #fff; 
+                font-size: 9rem; 
+                line-height: 11rem; 
+                font-weight: bold; 
+                margin-bottom: 40px;
+                max-width: 460px;
+                @include media-down(desktop-large) {
+                    font-size: 7rem; 
+                    line-height: 8.6rem; 
+                }
+                @include media-down(desktop) {
+                    font-size: 6.4rem; 
+                    line-height: 8.2rem; 
+                }
+                @include media-down(laptop) {
+                    font-size: 6rem;
+                    line-height: 7.4rem;
+                    margin-bottom: 25px;
+                }
+            }
+            .herobanner-discr{
+                color: #fff; 
+                font-size: 2.2rem; 
+                line-height: 3rem; 
+                font-weight: 400; 
+                margin-bottom: 50px;
+                max-width: 435px;
+                @include media-down(desktop-large) {
+                    font-size: 1.8rem; 
+                    line-height: 2.6rem;
+                    max-width: 400px;
+                }
+            }
+        }
+        .banner-right{
+            width: 65%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            position: relative;
+            .person-img{
+                animation-duration: 1.5s;
+                @include media-down(desktop-large) {
+                    width: 77%;
+                }
+            }
+            .search-box-main{
+                position: absolute;
+                top: 37%;
+                left: 18%;
+                width: 470px;
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.40);
+                padding: 10px;
+                animation-duration: 1.5s;
+                @include media-down(desktop-large) {
+                    top: 31%;
+                    left: 15%;
+                }
+                @include media-down(desktop) {
+                    top: 22%;
+                }
+                @include media-down(laptop-large) {
+                    top: 27%;
+                    width: 425px;
+                }
+                @include media-down(tablet-large) {
+                    width: 350px;
+                    padding: 8px;
+                    left: 7%;
+                    top: 47%;
+                }
+                .search-box{
+                    color: #fff;
+                    z-index: 1;
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    border-radius: 10px;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.12) 0%, rgba(112, 46, 142, 0.20) 100%);
+                    box-shadow: 20px 20px 90px 0px rgba(0, 0, 0, 0.50);
+                    @include media-down(tablet-large) {                        
+                        padding: 10px;
+                    }
+                    h2{
+                        width: 320px;
+                        animation: typing 1s steps(35) 1.5s  1 normal both, blink .5s step-end infinite alternate;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 20px;
+                        border-right: 1px solid;
+                        margin-left: 13px;
+                        @include media-down(laptop-large) {
+                            font-size: 18px;
+                            width: 283px;
+                        }
+                        @include media-down(tablet-large) {
+                            font-size: 14px;
+                            width: 223px;
+                        }
+                    }
+                }
+            }
+            .badge-img{
+                position: absolute;
+                top: 34%;
+                left: 28%;
+                animation-duration: 2s;
+                animation-delay: 2.5s;
+                @include media-down(desktop-large) {
+                    top: 27%;
+                    left: 31%;
+                }
+                @include media-down(desktop) {
+                    top: 17%;
+                }
+                @include media-down(laptop-large) {
+                    width: 330px;
+                    top: 26%;
+                    left: 37%;
+                }
+                @include media-down(tablet-large) {
+                    top: 45%;
+                    left: 35%;
+                }
+                img{
+                    @include media-down(tablet-large) {
+                        max-width: 270px;
+                    }
+                }
+            }
+            .tag-line{
+                position: absolute;
+                top: 42%;
+                left: -4%;
+                animation-name: fadeInLeft2;
+                animation-duration: 3s;
+                animation-delay: 3s;
+                @include media-down(desktop-large) {
+                    top: 38%;
+                    left: -5%;
+                }
+                @include media-down(desktop) {
+                    top: 29%;
+                    left: -5%;
+                    width: 550px;
+                }
+                @include media-down(laptop-large) {
+                    top: 34%;
+                }
+                @include media-down(tablet-large) {
+                    top: 51%;
+                }
+                img{
+                    @include media-down(tablet-large) {
+                        max-width: 420px;
+                    }
+                }
+            }
+            .ht-icons{
+                position: absolute;
+                width: 407px;
+                display: flex;
+                justify-content: space-between;
+                top: 57%;
+                left: 1.8%;
+                @include media-down(desktop-large) {
+                    top: 55%;
+                }
+                @include media-down(desktop) {
+                    top: 46%;
+                }
+                @include media-down(laptop-large) {
+                    top: 51%;
+                }
+                @include media-down(laptop) {
+                    width: 380px;
+                }
+                @include media-down(tablet-large) {
+                    width: 270px;
+                    left: 5%;
+                    top: 66%;
+                }
+                img{
+                    animation-name: fadeInUp2;
+                    animation-duration: 3s;
+                    animation-delay: 3s;
+                    @include media-down(tablet-large) {
+                        max-width: 80px;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-pagination {
+        position: absolute;
+        bottom: 11rem;
+        top: auto;
+        margin: auto;
+        left: 11rem;
+        display: flex;
+        flex-direction: row;
+        background: rgba(255,255,255,0.3);
+        width: 100px;
+        @include media-down(desktop-large) {
+            left: 8rem;
+        }
+        @include media-down(desktop) {
+            left: 7rem;
+        }
+        @include media-down(tablet-large) {
+            left: 2rem;
+        }
+        .swiper-pagination-bullet {
+            margin: 0 1rem;
+            background: rgba(255,255,255,0.3);
+        }
+        .swiper-pagination-bullet-active{
+            background: #fff;
+        }
+        .swiper-pagination-progressbar-fill{
+            background: #fff;
+        }
+    }
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+}
+@keyframes blink {
+    50% {
+       border-color: transparent;
+    }
+}
+@keyframes fadeInLeft2 {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100px,0,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeInRight2 {
+    0% {
+        opacity: 0;
+        transform: translate3d(100px,0,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,100px,0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.home-mobile-banner{
+    display: none !important;
+}
+

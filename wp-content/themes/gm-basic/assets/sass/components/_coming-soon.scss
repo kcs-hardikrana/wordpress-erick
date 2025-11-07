@@ -1,0 +1,91 @@
+body.comingsoon {
+    .header-main {
+        background: $interface-blueDark;
+    }
+}
+
+.coming-soon{
+    padding: 20rem 0 20rem;
+    z-index: zindex(nav);
+    position: relative;
+    background: $interface-white;
+    margin-bottom: -20rem;
+    text-align: center;
+    @include media-down(desktop-large) {
+        margin-bottom: -15rem;
+    }
+
+    @include media-down(desktop) {
+        margin-bottom: -10rem;
+        padding: 10rem 0 10rem;
+    }        
+
+    @include media-down(tablet-large) {
+        margin-bottom: -8rem;
+    }
+
+    @include media-down(mobile) {
+        padding-top: 6rem;
+    }
+
+    &__body{
+        h1{
+            font-size: 16rem;
+            font-weight: weight(bold);
+            line-height: 16rem;
+            color: $interface-black;
+            font-family: family(secondary);
+            text-transform: uppercase;
+            margin-bottom: 1.7rem;
+    
+            span{
+                background: linear-gradient(92.28deg, #92263D 0%, #92263D 0%, #E72E2D 34.92%, #F28826 68.88%, #FFCB05 100%);
+                background-position: 0% 0%;
+                background-size: calc(var(--bg-size) * 1%) 100%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            @include media-down(desktop) {
+                font-size: 8rem;
+                line-height: 9rem;
+            }
+
+            @include media-down(laptop) {
+                font-size: 7rem;
+                line-height: 7rem;
+            }
+
+            @include media-down(tablet-large) {
+                font-size: 6rem;
+                line-height: 6rem;
+            }
+
+            @include media-down(tablet) {
+                font-size: 5rem;
+                line-height: 5rem;
+            }
+
+            @include media-down(mobile) {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
+        .o-paragraph-medium{
+            font-size: size(subtitle, medium);
+            font-weight: weight(bold);
+            line-height: lineheight(subtitle, medium);
+            color: $interface-black;
+            padding-bottom: 2rem;
+            @include media-down(desktop) {
+                font-size: size(body, small);
+                line-height: lineheight(body, small);
+            }
+            @include media-down(tablet-large) {
+                font-size: size(paragraph, small);
+                line-height: lineheight(paragraph, small);
+            }
+        }
+    }    
+}

@@ -1,0 +1,1041 @@
+.insustry-main-section {
+    position: relative;
+    margin-top: 15rem;
+
+    @include media-down(desktop-large) {
+        margin-top: 10rem;
+    }
+
+    @include media-down(desktop) {
+        margin-top: 8rem;
+    }
+
+    @include media-down(laptop-large) {
+        margin-top: 6rem;
+    }
+
+    @include media-down(tablet-large) {
+        margin-top: 5rem;
+    }
+
+    @include media-down(tablet) {
+        margin-top: 4rem;
+    }
+
+    .custom-heading {
+        h2 {
+            font-size: 5rem;
+            line-height: 7rem;
+            font-weight: weight(bold);
+            color: $interface-black;
+            font-family: family(secondary);
+            max-width: 136rem;
+            position: relative;
+            z-index: 3;
+        
+            @include media-down(desktop-large) {
+                font-size: 4.5rem;
+                line-height: 6rem;
+            }
+        
+            @include media-down(desktop) {
+                font-size: 4rem;
+                line-height: 5.5rem;
+            }
+        
+            @include media-down(laptop) {
+                font-size: 3rem;
+                line-height: 4.4rem;
+            }
+        
+            @include media-down(tablet) {
+                font-size: 2.4rem;
+                line-height: 3rem;
+            }
+        
+            @include media-down(mobile) {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+    }
+
+    .custom-heading h3, .custom-heading h2 {
+        max-width: 110rem;
+    }
+
+    .retail-customer-left {
+        padding-right: 7rem;
+
+        @include media-down(tablet-large) {
+            padding-right: 3rem;
+        }
+
+        @include media-down(tablet) {
+            padding-right: 2rem;
+        }
+    }
+
+    .retail-customer-right {
+        padding-left: 7rem;
+
+        @include media-down(tablet-large) {
+            padding-left: 3rem;
+        }
+
+        @include media-down(tablet) {
+            padding-left: 2rem;
+        }
+
+        @include media-down(mobile) {
+            padding-left: 0;
+        }
+    }
+
+    .common-para {
+        p {
+            color: $interface-black;
+            padding-top: 4rem;
+            max-width: 78rem;
+            font-weight: weight(medium);
+
+            @include media-down(desktop-large) {
+                padding-top: 3rem;
+            }
+
+            @include media-down(desktop) {
+                padding-top: 4rem;
+            }
+
+            @include media-down(laptop) {
+                padding-top: 3rem;
+            }
+
+            @include media-down(mobile) {
+                padding-top: 2rem;
+            }
+        }
+    }
+
+    &:after {
+        content: "";
+        background-image: url(../images/bg-outer-img.webp);
+        width: 30.6rem;
+        height: 35.8rem;
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        z-index: zindex(float);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @include media-down(desktop-large) {
+            top: 1rem;
+            background-size: 100%;
+            width: 34.6rem;
+            height: 30.8rem;
+        }
+
+        @include media-down(desktop) {
+            height: 22.8rem;
+        }
+
+        @include media-down(tablet-large) {
+            width: 15.6rem;
+            height: 18.8rem;
+            background-size: 100%;
+            top: 1rem;
+        }
+        @include media-down(mobile) {
+            top: -4rem;
+            background-size: 100% auto;
+            width: 12.6rem;
+            height: 7.8rem;
+        }
+    }
+
+    .custom-heading {
+        h2 {
+            font-size: 5rem;
+            line-height: 7rem;
+            font-weight: weight(bold);
+            color: $interface-black;
+            font-family: family(secondary);
+            max-width: 136rem;
+        
+            @include media-down(desktop-large) {
+              font-size: 4.5rem;
+              line-height: 6rem;
+            }
+        
+            @include media-down(desktop) {
+              font-size: 4rem;
+              line-height: 5.5rem;
+            }
+        
+            @include media-down(laptop) {
+              font-size: 3rem;
+              line-height: 4.4rem;
+            }
+        
+            @include media-down(tablet) {
+              font-size: 2.4rem;
+              line-height: 3rem;
+            }
+        
+            @include media-down(mobile) {
+              font-size: 2rem;
+              line-height: 3rem;
+            }
+          }
+    }
+}
+
+.transformation-row-main {
+    .custom-heading {
+        h2 {
+            font-size: 5rem;
+            line-height: 7rem;
+            font-weight: weight(bold);
+            color: $interface-black;
+            font-family: family(secondary);
+            max-width: 136rem;
+        
+            @include media-down(desktop-large) {
+              font-size: 4.5rem;
+              line-height: 6rem;
+            }
+        
+            @include media-down(desktop) {
+              font-size: 4rem;
+              line-height: 5.5rem;
+            }
+        
+            @include media-down(laptop) {
+              font-size: 3rem;
+              line-height: 4.4rem;
+            }
+        
+            @include media-down(tablet) {
+              font-size: 2.4rem;
+              line-height: 3rem;
+            }
+        
+            @include media-down(mobile) {
+              font-size: 2rem;
+              line-height: 3rem;
+            }
+          }
+    }
+}
+
+.transformation-row {
+    padding-top: 7rem;
+
+    @include media-down(desktop) {
+        padding-top: 4rem;
+    }
+
+    @include media-down(laptop) {
+        padding-top: 3rem;
+    }
+
+    @include media-down(mobile) {
+        padding-top: 2rem;
+    }
+
+    .o-header--h3 {
+        font-weight: weight(bold);
+        color: $interface-white;
+        max-width: 65.7rem;
+        z-index: zindex(float);
+        position: relative;
+        font-family: family(secondary);
+    }
+
+    .common-para p {
+        color: $interface-white;
+        padding-top: 3rem;
+        z-index: zindex(float);
+        position: relative;
+        max-width: 65.7rem;
+
+        @include media-down(mobile) {
+            padding-top: 2rem;
+        }
+    }
+
+    .transformation-row-left {
+        background-color: $interface-darkblue;
+        padding: 5rem 11rem;
+
+        @include media-down(desktop) {
+            padding: 4rem 7rem;
+        }
+
+        @media (max-width: 1366px) {
+            padding: 4rem 6rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding: 3rem 2rem;
+        }
+
+        @include media-down(mobile) {
+            padding: 4rem 1.5rem;
+        }
+
+        &:before {
+            content: "";
+            background: linear-gradient(209.24deg, #23A7E0 0%, rgba(35, 167, 224, 0.5) 21.06%, rgba(45, 47, 143, 0.28) 43.02%);
+            opacity: 0.7;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: block;
+        }
+
+        &:after {
+            content: "";
+            background-image: url(../images/ai-vector.webp);
+            position: absolute;
+            left: 0;
+            top: 6rem;
+            width: 43.7rem;
+            height: 30rem;
+            background-repeat: no-repeat;
+            // z-index: zindex(under);
+
+            @include media-down(desktop-large) {
+                width: 40.7rem;
+            }
+
+            @include media-down(desktop) {
+                width: 39.7rem;
+            }
+
+            @media (max-width: 1366px) {
+                width: 37.8rem;
+                background-size: 100%;
+            }
+
+            @include media-down(laptop) {
+                width: 35.8rem;
+                background-size: 100%;
+            }
+
+            @include media-down(tablet-large) {
+                width: 29.6rem;
+                height: 30rem;
+                background-size: 100%;
+            }
+
+            @include media-down(tablet) {
+                width: 23.6rem;
+                height: 19rem;
+            }
+
+            @include media-down(mobile) {
+                height: 20rem;
+                background-size: 100%;
+            }
+        }
+    }
+
+    .transformation-row-right {
+        background-color: #702E8E;
+        padding: 5rem 10.4rem 11rem;
+
+        @include media-down(desktop) {
+            padding: 4rem 7.4rem 7rem;
+        }
+
+        @media (max-width: 1366px) {
+            padding: 4rem 5.4rem 7rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding: 3rem 3.4rem 4rem;
+        }
+
+        @include media-down(mobile) {
+            padding: 4rem 1.5rem 4rem;
+        }
+
+        &:before {
+            content: "";
+            background: linear-gradient(210.31deg, #E98824 -2.34%, rgba(233, 136, 36, 0.5) 19.73%, rgba(112, 46, 142, 0.28) 42.75%);
+            opacity: 0.7;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: block;
+        }
+
+        &:after {
+            content: "";
+            background-image: url(../images/ai-vector.webp);
+            position: absolute;
+            left: 0;
+            top: 6rem;
+            width: 43.7rem;
+            height: 30rem;
+            background-repeat: no-repeat;
+            // z-index: zindex(under);
+
+            @include media-down(desktop-large) {
+                width: 40.7rem;
+            }
+
+            @include media-down(desktop) {
+                width: 39.7rem;
+            }
+
+            @media (max-width: 1366px) {
+                width: 37.8rem;
+            }
+
+            @include media-down(laptop) {
+                width: 35.8rem;
+                background-size: 100%;
+                height: 22rem;
+            }
+
+            @include media-down(tablet-large) {
+                width: 25.6rem;
+                height: 30rem;
+                background-size: 100%;
+            }
+
+            @include media-down(tablet) {
+                width: 23.6rem;
+                height: 19rem;
+            }
+
+            @include media-down(mobile) {
+                height: 20rem;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+.retail-solutions-section {
+    padding-top: 10rem;
+
+    @include media-down(desktop-large) {
+        padding-top: 5rem;
+    }
+
+    @include media-down(desktop) {
+        padding-top: 7rem;
+    }
+
+    @include media-down(laptop) {
+        padding-top: 5rem;
+    }
+
+    @include media-down(tablet-large) {
+        padding-top: 4rem;
+    }
+
+    @include media-down(mobile) {
+        padding-top: 3rem;
+    }
+
+    .o-header--h3 {
+        color: $interface-black;
+        font-weight: weight(bold);
+        font-family: family(secondary);
+    }
+
+    .common-para {
+        padding-top: 3rem;
+        color: $interface-black;
+        max-width: 126rem;
+
+        @include media-down(desktop) {
+            padding-top: 2rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding-top: 1.2rem;
+        }
+
+        p {
+            font-weight: weight(medium);
+        }
+
+        ul {
+            padding-top: 3.5rem;
+
+            @include media-down(desktop) {
+                padding-top: 1.5rem;
+            }
+
+            @include media-down(mobile) {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .solution-block {
+        padding-top: 14.2rem;
+
+        @include media-down(desktop) {
+            padding-top: 9.2rem;
+        }
+
+        @include media-down(tablet) {
+            padding-top: 5.2rem;
+        }
+
+        @include media-down(mobile) {
+            padding-top: 2rem;
+        }
+
+        .solution-block-left {
+            padding-right: 5rem;
+            padding-left: 0;
+            padding-top: 2.5rem;
+
+            @include media-down(tablet) {
+                padding-right: 3rem;
+                padding-left: 0;
+            }
+
+            @include media-down(mobile) {
+                padding-right: 0;
+                padding-left: 0;
+                padding-top: 0;
+            }
+
+            .o-header--h3 {
+                color: $interface-black;
+                font-weight: weight(bold);
+                font-family: family(secondary);
+            }
+
+            .common-para {
+                padding-top: 1.5rem;
+                color: $interface-black;
+
+                p {
+                    max-width: 63rem;
+                }
+
+                @include media-down(tablet) {
+                    padding-top: 1rem;
+                }
+
+            }
+        }
+
+        .solution-block-right {
+
+            @include media-down(mobile) {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            .vc_column-inner {
+                display: flex;
+                justify-content: end;
+            }
+
+            img {
+                width: 80rem;
+                height: 65rem;
+                object-fit: cover;
+                object-position: center;
+                box-shadow: 15px 15px 70px 0px #00000026;
+
+                @include media-down(desktop-large) {
+                    height: 55rem;
+                    width: 70rem;
+                }
+
+                @include media-down(desktop) {
+                    height: 50rem;
+                }
+
+                @include media-down(laptop) {
+                    height: 40rem;
+                }
+
+                @include media-down(mobile) {
+                    height: 26rem;
+                }
+            }
+        }
+
+        &:nth-child(odd) {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .solution-block-right {
+                .vc_column-inner {
+                    display: flex;
+                    justify-content: start;
+                }
+            }
+
+            .solution-block-left {
+                padding-left: 5rem;
+                padding-right: 0;
+
+                @include media-down(tablet) {
+                    padding-left: 3rem;
+                    padding-right: 0;
+                }
+
+                @include media-down(mobile) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .common-para.common-listing {
+        h4, p {
+            font-size: 2.6rem;
+            line-height: 4rem;
+            font-family: family(dm-sans);
+            font-weight: weight(regular);
+        
+            @include media-down(desktop) {
+              font-size: 2rem;
+              line-height: 3.4rem;
+            }
+        
+            @include media-down(laptop) {
+              font-size: 1.8rem;
+              line-height: 3rem;
+            }
+        
+            @include media-down(tablet-large) {
+              font-size: 1.6rem;
+              line-height: 2.6rem;
+            }
+        
+            @include media-down(mobile) {
+              font-size: 1.4rem;
+              line-height: 2rem;
+              max-width: 100%;
+            }
+          }
+    }
+}
+
+.why-rysun-main-section {
+    background-color: #000000;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    position: relative;
+    margin-top: 15rem;
+    overflow: hidden;
+
+    @include media-down(desktop-large) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin-top: 10rem;
+    }
+
+    @include media-down(desktop) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        margin-top: 8rem;
+    }
+
+    @include media-down(laptop-large) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        margin-top: 6rem;
+    }
+
+    // @include media-down(laptop) {
+    //     padding-top: 8rem;
+    //     padding-bottom: 12rem;
+    // }
+
+    @include media-down(tablet-large) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-top: 5rem;
+    }
+
+    @include media-down(mobile) {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        margin-top: 5rem;
+    }
+
+    // @include media-down(tablet) {
+    //     padding-top: 4rem;
+    //     padding-bottom: 4rem;
+    //     margin-top: 4rem;
+    // }
+
+    // @include media-down(mobile) {
+    //     padding-bottom: 4rem;
+    //     // margin-top: 3rem;
+    // }
+
+    &::before {
+        content: "";
+        background: linear-gradient(41deg, #2D2F8F 0%, #000 100%);
+        opacity: 0.6000000238418579;
+        filter: blur(250px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    &::after {
+        content: "";
+        background-image: url(../images/impact-bg.webp);
+        width: 80.5rem;
+        height: 78.1rem;
+        position: absolute;
+        left: 0;
+        bottom: 3rem;
+        background-repeat: no-repeat;
+        z-index: zindex(under);
+
+        @include media-down(desktop-large) {
+            bottom: -4rem;
+        }
+
+        @include media-down(desktop) {
+            width: 59.5rem;
+            height: 66.1rem;
+            bottom: 0;
+            background-size: 100%;
+        }
+    }
+
+    .small-title {
+        color: $interface-white;
+    }
+
+    .custom-heading {
+        max-width: 68.8rem;
+        color: $interface-white;
+        font-size: 5rem;
+        line-height: 7rem;
+        font-weight: weight(bold);
+        font-family: family(secondary);
+
+        @include media-down(desktop) {
+            font-size: 4rem;
+            line-height: 6rem;
+        }
+
+        @include media-down(laptop) {
+            font-size: 3.2rem;
+            line-height: 5rem;
+        }
+
+        @include media-down(tablet-large) {
+            font-size: 2.8rem;
+            line-height: 4rem;
+        }
+
+        @include media-down(tablet) {
+            font-size: 2.4rem;
+            line-height: 3.4rem;
+        }
+
+        @include media-down(mobile) {
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+        }
+    }
+
+    .o-body-medium {
+        @extend %o-body-medium;
+        color: $interface-white;
+        font-family: family(dm-sans);
+        font-weight: weight(regular);
+        padding-left: 10.9rem;
+
+        @include media-down(tablet-large) {
+            padding-left: 5.9rem;
+        }
+
+        @include media-down(mobile) {
+            padding-left: 0;
+            padding-top: 0;
+        }
+
+        p {
+            padding-top: 5rem;
+
+            @include media-down(desktop) {
+                padding-top: 3rem;
+            }
+
+            @include media-down(tablet) {
+                padding-top: 2rem;
+            }
+        }
+    }
+
+    &.why-rysun-energy {
+        .o-body-medium {
+            color: $interface-white;
+            font-family: family(dm-sans);
+            padding-left: 0;
+            max-width: 136rem;         
+
+            p {
+                padding-top: 0;
+            }
+        }
+
+        .impact-energy-section {
+            padding-top: 20rem;
+
+            .custom-heading {
+                max-width: 136rem;
+            }
+        }
+    }
+
+    &.why-rysun-main-section {
+        .impact-section-main-btm {
+            .custom-heading {
+                max-width: 136rem;
+            }
+        }  
+    }
+}
+
+.impact-section-main {
+    // padding-top: 20rem;
+
+    // @include media-down(desktop-large) {
+    //     padding-top: 10rem;
+    // }
+
+    // @include media-down(tablet-large) {
+    //     padding-top: 4rem;
+    // }
+
+    // @include media-down(tablet) {
+    //     padding-top: 3rem;
+    // }
+
+    // .custom-heading {
+    //     max-width: 136rem;
+    // }
+
+    &.impact-section-main-btm {
+        padding-top: 20rem;
+
+        @include media-down(desktop-large) {
+            padding-top: 10rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding-top: 4rem;
+        }
+
+        @include media-down(tablet) {
+            padding-top: 3rem;
+        }
+        @include media-down(mobile) {
+            padding-bottom: 2rem;
+        }
+        
+    }
+}
+
+.impact-section {
+    margin: 0 -4.3rem !important;
+    padding-top: 7rem;
+
+    @include media-down(desktop-large) {
+        margin: 0 -3.3rem !important;
+        padding-top: 3rem;
+    }
+
+    @include media-down(desktop) {
+        margin: 0 -2rem !important;
+        padding-top: 4rem;
+    }
+
+    @include media-down(tablet-large) {
+        margin: 0 -1rem !important;
+    }
+
+    @include media-down(tablet) {
+        margin: 0 -0.5rem !important;
+        padding-top: 2rem;
+    }   
+    @include media-down(mobile) {
+        margin: 0 !important;
+        padding-top: 0;
+    }    
+    .impact-block {
+        padding: 0 3rem;
+        &.three-column{        
+            @include media-down(mobile) {                
+                width: 33.33%;
+            }        
+              .impact-title{
+                @include media-down(mobile) {
+                    font-size: 1.2rem;
+                    line-height: 2.2rem;
+                    max-width: 120px;
+                    left: 1rem;
+                    word-wrap: break-word;
+                  }
+              }
+        }
+        @include media-down(desktop-large) {
+            padding: 0 2.5rem;
+        }
+
+        @include media-down(desktop) {
+            padding: 0 2rem;
+        }
+
+        @include media-down(tablet-large) {
+            padding: 0 1rem;
+        }
+
+        @include media-down(tablet) {
+            padding: 0 0.5rem;
+        }
+
+        @include media-down(mobile) {
+            padding: 0.5rem 0.5rem;
+            width: 50%;
+        }        
+
+        &>.vc_column-inner {
+            border: 1px solid rgba(128, 128, 128, 0.2);
+            padding: 3rem !important;
+            position: relative;
+            height: 32rem;
+            overflow: hidden;
+
+            @include media-down(desktop) {
+                height: 28rem;
+            }
+
+            @include media-down(tablet-large) {
+                height: 24rem;
+            }
+
+            @include media-down(tablet) {
+                padding: 2rem 1.5rem !important;
+                height: 20rem;
+            }
+
+            @include media-down(mobile) {
+                height: 100%;
+                padding: 2rem 1rem !important;
+            }
+
+            &::after {
+                content: "";
+                left: 2rem;
+                width: 30.6rem;
+                height: 30.6rem;
+                top: 12rem;
+                border-radius: 306px;
+                opacity: 0.30000001192092896;
+                background: linear-gradient(296deg, #23A7E0 0%, #2D2F8F 22.79%, #702E8E 42.51%, #E62E2E 64.86%, #E98824 84.53%, #FFCC06 100%);
+                filter: blur(100px);
+                position: absolute;
+                display: block;
+
+                @include media-down(desktop) {
+                    width: 25.6rem;
+                    height: 25.6rem
+                }
+            }
+        }
+
+        .impact-img {
+            z-index: zindex(float);
+            position: relative;
+            img{
+                @include media-down(tablet-large) {
+                    width: auto;
+                    height: 40px;   
+                  }
+            }
+        }
+
+        .impact-title {
+            font-size: 2.2rem;
+            line-height: 3rem;
+            font-family: family(dm-sans);
+            font-weight: weight(medium);
+            z-index: zindex(float);
+            color: $interface-white;
+            margin-top: auto;
+
+            @include media-down(desktop) {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            @include media-down(tablet-large) {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+            }
+
+            @include media-down(tablet) {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+                bottom: 2rem;
+                left: 1.5rem;
+
+                br {
+                    display: none;
+                }
+            }
+
+            @include media-down(mobile) {
+                margin-top: 1rem;
+            }
+        }
+
+        .wpb_wrapper {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.industry-slider-section {
+    &.industry-slider-section-ai {
+        .small-title {
+            padding-bottom: 3rem;
+            @include media-down(mobile) {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.career-opportunity-section.service-half-section {
+    &.energy-opportunity-section {
+        .custom-heading h3 {
+            max-width: 112.9rem;
+        }
+    }
+}

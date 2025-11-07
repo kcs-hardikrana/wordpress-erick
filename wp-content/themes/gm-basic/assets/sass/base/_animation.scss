@@ -1,0 +1,45 @@
+.animation {
+    opacity: 0; 
+    transition: all 400ms linear;
+}
+.fadeRight{
+    transform: translate3d(50px, 0, 0);
+}
+.fadelLeft{
+    transform: translate3d(-50px, 0, 0);
+}
+.fadeTop{
+    transform: translate3d(0, 50px, 0);
+}
+.fadeBottom{
+    transform: translate3d(0, -50px, 0);
+}
+.fadeIn{
+    transform: translate3d(0, 0, 0);
+}
+.fadeRight.in-view, 
+.fadelLeft.in-view, 
+.fadeBottom.in-view, 
+.fadeTop.in-view, .fadeIn.in-view{
+    opacity: 1; 
+    transform: translate3d(0, 0, 0);
+}
+
+.zoom-eefect{
+    transition: opacity 800ms cubic-bezier(.4,0,.2,1),transform 800ms cubic-bezier(.4,0,.2,1);
+    will-change: opacity,transform;
+    opacity: 0;
+    transform: matrix(.92,0,0,.92,0,0);
+
+    &.in-view{
+        opacity: 1;
+        transform: matrix(1,0,0,1,0,0);
+    }
+}
+
+.split-line, .titleanimation > div {
+    overflow: hidden;
+}
+// .titleanimation *{
+//     vertical-align: top;
+// }

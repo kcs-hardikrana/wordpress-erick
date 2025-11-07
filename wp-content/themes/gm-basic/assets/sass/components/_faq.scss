@@ -1,0 +1,192 @@
+.vc_tta-color-grey.vc_tta-style-classic {
+    .vc_tta-panel {
+
+        .vc_tta-panel-body,
+        .vc_tta-panel-body::after,
+        .vc_tta-panel-body::before {
+            border-color: #E6E6E6 !important;
+        }
+
+        .vc_tta-panel-heading {
+            border-color: #E6E6E6 !important;
+            background-color: #FFFFFF !important;
+        }
+
+        .vc_tta-panel-body {
+            background-color: #FFFFFF !important;
+
+            @include media-down(tablet) {
+                padding: 15px !important;
+            }
+
+            p {
+                font-size: 1.8rem !important;
+                line-height: 2.8rem !important;
+                color: #333333 !important;
+                margin-bottom: 2rem;
+                font-family: 'DM Sans';
+                line-height: 2.8rem;
+
+                @include media-down(desktop-large) {
+                    margin-bottom: 1.1rem;
+                }
+
+                @include media-down(desktop) {
+                    font-size: 1.6rem !important;
+                    line-height: 2.6rem !important;
+                    margin-bottom: 1rem;
+                }
+
+                @include media-down(laptop-large) {
+                    margin-bottom: 0.6rem;
+                }
+
+                @include media-down(tablet) {
+                    line-height: 2.2rem !important;
+                    margin-bottom: 0.9rem;
+                }
+
+                @include media-down(mobile) {
+                    font-size: 1.5rem !important;
+                    line-height: 2rem !important;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            ul,
+            ol {
+                margin-bottom: 2rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                @include media-down(laptop) {
+                    margin-bottom: 1.4rem;
+                }
+
+                @include media-down(mobile) {
+                    margin-bottom: 1.2rem;
+                }
+
+                li {
+                    position: relative;
+                    padding-block: 0;
+                    margin-top: 1.5rem;
+                    font-family: family(dm-sans);
+                    padding-left: 2.5rem;
+                    @extend %o-paragraph-medium;
+                    font-family: 'DM Sans';
+                    line-height: 2.8rem;
+
+                    &:before {
+                        content: "";
+                        width: 1rem;
+                        height: 1rem;
+                        background: linear-gradient(135.73deg,
+                                #E98824 17.2%,
+                                #E62E2E 78.52%);
+                        position: absolute;
+                        left: 0;
+                        top: 0.9rem;
+                        border-radius: 100%;
+                        display: block;
+                    }
+
+                    @include media-down(desktop-large) {
+                        margin-top: 1.1rem;
+                    }
+
+                    @include media-down(desktop) {
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        margin-top: 1rem;
+                        padding-left: 2.2rem;
+
+                        &:before {
+                            top: 0.8rem;
+                        }
+                    }
+
+                    @include media-down(laptop-large) {
+                        margin-top: 0.6rem;
+                    }
+
+                    @include media-down(tablet) {
+                        line-height: 2.2rem;
+                        margin-top: 0.9rem;
+                    }
+
+                    @include media-down(mobile) {
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        padding-left: 1.8rem;
+
+                        &:before {
+                            top: 0.7rem;
+                        }
+                    }
+                }
+            }
+
+            ol {
+                padding-left: 2rem;
+
+                >li {
+                    @include media-down(desktop) {
+                        padding-left: 0;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .vc_tta-panel-title {
+            >a {
+                @include media-down(tablet) {
+                    padding: 10px 20px;
+                }
+
+                >span {
+                    font-size: 1.8rem !important;
+                    color: #333333 !important;
+                    font-family: 'DM Sans';
+                    font-weight: 700;
+                    line-height: 2.8rem;
+
+                    @include media-down(desktop) {
+                        font-size: 1.6rem !important;
+                        line-height: 2.6rem;
+                    }
+
+                    @include media-down(tablet) {
+                        line-height: 2.2rem;
+                    }
+
+                    @include media-down(mobile) {
+                        font-size: 1.5rem !important;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-left .vc_tta-controls-icon {
+    @include media-down(tablet) {
+        left: 15px !important;
+    }
+}
+
+.vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-left.vc_tta-panel-title>a {
+    @include media-down(tablet) {
+        padding-left: 41px;
+    }
+}

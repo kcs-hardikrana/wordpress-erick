@@ -1,0 +1,37 @@
+.about-services {
+    .service-listing-main .service-listing {
+        width: 100%;
+        padding: 0;
+        height: 71.8rem;
+
+        .service-content-block .service-title {
+            color: $interface-black;
+            text-align: center;
+            left: 0;
+            width: 100%;
+        }
+
+        .service-content-block {
+            width: 100%;
+        }
+
+        .service-img {    
+            opacity: 0;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        &:hover {
+            .service-img {
+                opacity: 1;
+            }
+
+            .service-content-block .service-title {
+                color: $interface-white;
+            }
+    
+        }
+    }
+}
